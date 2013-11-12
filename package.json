@@ -1,0 +1,21 @@
+{
+  "name": "fastgap",
+  "version": "0.1.0",
+  "description": "FastGap is a template created ​​by Brazilians to start developing native apps for smartphones using PhoneGap.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FastGap/fastgap.git"
+  },
+  "keywords": [
+    "fastgap"
+  ],
+  "author": "Gustavo Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FastGap/fastgap/issues"
+  }
+}
