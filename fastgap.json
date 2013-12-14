@@ -1,0 +1,50 @@
+{
+  "name": "fastgap",
+  "version": "0.2.0",
+  "description": "FastGap is a template created ​​by Brazilians to start developing native apps for smartphones using PhoneGap.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FastGap/fastgap.git"
+  },
+  "keywords": [
+    "fastgap",
+    "zepto"
+  ],
+  "author": {
+    "name": "Gustavo Costa",
+    "email": "emailgustavocosta",
+    "url": "https://github.com/GustavoCostaW"
+  },
+  "maintainers": [
+    {
+      "name": "Gustavo Costa",
+      "email": "emailgustavocosta",
+      "url": "https://github.com/GustavoCostaW"
+    },
+    {
+      "name": "Ivan Santos",
+      "email": "pragmaticivan@gmail.com",
+      "url": "https://github.com/pragmaticivan"
+    },
+    {
+      "name": "Mayron Cachina",
+      "email": "mayroncachina@gmail.com",
+      "url": "https://github.com/mayroncachina"
+    }    
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "url-mit"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/FastGap/fastgap/issues"
+  },
+  "homepage": "http://sitehere",
+  "docs": "https://github.com/FastGap/fastgap#readme",
+  "download": "https://github.com/FastGap/fastgap/archive/master.zip",
+  "dependencies": {
+    "zepto": ">=1.4"
+  }
+}
