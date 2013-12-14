@@ -32,7 +32,9 @@ FastGap is a template created by Brazilians to start developing native apps for 
 #### Run
 
     node app.js
-    
+
+######Your project is running on localhost:3000
+
 <h2>Releases</h2>
 
 soon
