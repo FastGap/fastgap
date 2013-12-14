@@ -25,6 +25,10 @@ FastGap is a template created by Brazilians to start developing native apps for 
 
     git clone https://github.com/FastGap/fastgap.git
 
+#### Run
+
+    node app.js
+
 #### Install npm packages
 
     [sudo] npm install
