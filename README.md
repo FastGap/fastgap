@@ -35,10 +35,10 @@ FastGap is a template created by Brazilians to start developing native apps for 
 
 ######Your project is running on localhost:3000
 
-<h2>Releases</h2>
+#### Releases
 
 soon
 
-<h2>VC-deo Demos</h2>
+#### VC-deo Demos</h2>
 
 soon
