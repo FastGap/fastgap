@@ -10,8 +10,8 @@ module.exports = function(grunt) {
 
         // Default Paths
         paths: {
-          src: "./src",
-          dist: "./dist"
+          src: "src",
+          dist: "dist"
         },
 
         // Assets directory
@@ -20,7 +20,8 @@ module.exports = function(grunt) {
             sass:   "<%= paths.src %>/assets/scss",
             css:    "<%= paths.src %>/assets/css",
             img:    "<%= paths.src %>/assets/images",
-            vendor: "<%= paths.src %>/vendor"
+            vendor: "<%= paths.src %>/vendor",
+            pages: "<%= paths.src %>/pages"
         },
 
         // Load package.jsom
@@ -93,7 +94,6 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     force: true,
-                    config: "config/compass.rb",
                     sassDir: "<%= dirs.sass %>",
                     cssDir: "<%= dirs.css %>",
                     banner: "<%= banner %>",
@@ -142,11 +142,32 @@ module.exports = function(grunt) {
               src: buildConfig.cssFiles,
               dest: "<%= paths.dist %>/assets/css"
             }]
-          }
+          },
+          distJs: {
+            files: [{
+              expand: true,
+              cwd: "<%= dirs.js %>/",
+              src: buildConfig.jsFiles,
+              dest: "<%= paths.dist %>/assets/js"
+            }]
+          },
+          distImages: {
+            files: [{
+              expand: true,
+              cwd: "<%= dirs.img %>/",
+              src: "**",
+              dest: "<%= paths.dist %>/assets/images"
+            }]
+          },
+          distPages: {
+            files: [{
+              expand: true,
+              cwd: "<%= dirs.pages %>/",
+              src: "**",
+              dest: "<%= paths.dist %>/pages"
+            }]
+          },
         }
-
-
-
     };
 
 
@@ -163,17 +184,12 @@ module.exports = function(grunt) {
     // Watch files
     grunt.registerTask( "watch-files", [ "watch" ]);
 
-    // grunt.registerTask('server', [
-    //   'connect',
-    //   'watch'
-    // ]);
 
-    //NOTE(ajoslin): the order of these tasks is very important.
+    // Build Task - (the order of these tasks is very important)
     grunt.registerTask('build', [
       'compass',
       'copy:distVendor',
-      'copy:distHtml',
-      'copy:distCss',
+      'copy',
       'uglify'
     ]);
 
