@@ -1,6 +1,6 @@
 [![Stories in Ready](https://badge.waffle.io/FastGap/fastgap.png?label=ready)](https://waffle.io/FastGap/fastgap)  
 
-#FastGap -- Node.JS Version
+#FastGap
 
 A jump-start for Fast Phonegap Development.
 
@@ -28,10 +28,6 @@ FastGap is a template created by Brazilians to start developing native apps for 
 #### Install npm packages
 
     [sudo] npm install
-
-#### Run
-
-    node app.js
 
 ######Your project is running on localhost:3000
 

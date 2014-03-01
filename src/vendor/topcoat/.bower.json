@@ -1,0 +1,15 @@
+{
+  "name": "topcoat",
+  "homepage": "https://github.com/topcoat/topcoat",
+  "version": "0.8.0",
+  "_release": "0.8.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.8.0",
+    "commit": "1efa719ab0025a90e9106cdef55f8a24bc663e08"
+  },
+  "_source": "git://github.com/topcoat/topcoat.git",
+  "_target": "~0.8.0",
+  "_originalSource": "topcoat",
+  "_direct": true
+}
