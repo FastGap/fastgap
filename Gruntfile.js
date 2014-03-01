@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         "\n" +
         "/*\n" +
          " * -------------------------------------------------------\n" +
-         " * Project: <%= pkg.title %>\n" +
+         " * Project: <%= pkg.name %>\n" +
          " * Version: <%= pkg.version %>\n" +
          " *\n" +
          " *\n" +

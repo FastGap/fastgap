@@ -1,0 +1,22 @@
+{
+  "name": "FastGap",
+  "version": "0.0.2",
+  "homepage": "https://github.com/pragmaticivan/fastgap",
+  "authors": [
+    "Ivan Santos <pragmaticivan@gmail.com>"
+  ],
+  "description": "Faster PhoneGap Template",
+  "keywords": [
+    "phonegap"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/js/vendor",
+    "test",
+    "tests"
+  ]
+}

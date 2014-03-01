@@ -12,11 +12,30 @@
     "zepto"
   ],
   "author": {
-    "name": "Gustavo Costa"
+    "name": "Gustavo Costa",
+    "email": "emailgustavocosta",
+    "url": "https://github.com/GustavoCostaW"
   },
   "licenses": [
     {
       "type": "MIT"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Gustavo Costa",
+      "email": "emailgustavocosta",
+      "url": "https://github.com/GustavoCostaW"
+    },
+    {
+      "name": "Ivan Santos",
+      "email": "pragmaticivan@gmail.com",
+      "url": "https://github.com/pragmaticivan"
+    },
+    {
+      "name": "Mayron Cachina",
+      "email": "mayroncachina@gmail.com",
+      "url": "https://github.com/mayroncachina"
     }
   ],
   "bugs": {

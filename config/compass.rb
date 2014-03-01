@@ -2,11 +2,11 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "assets/css"
-sass_dir = "assets/sass"
-images_dir = "assets/images"
-javascripts_dir = "assets/js"
-fonts_dir = "assets/fonts"
+css_dir = "../src/assets/css"
+sass_dir = "../src/assets/sass"
+images_dir = "../src/assets/images"
+javascripts_dir = "../src/assets/js"
+fonts_dir = "../src/assets/fonts"
 
 output_style = :compressed
 environment = :production
@@ -14,7 +14,7 @@ environment = :production
 relative_assets = true
 
 line_comments = false
-color_output = false
+color_output = true
 
 
 # If you prefer the indented syntax, you might want to regenerate this
