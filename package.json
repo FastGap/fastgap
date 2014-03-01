@@ -1,6 +1,6 @@
 {
   "name": "fastgap",
-  "version": "0.2.0",
+  "version": "0.0.2-alpha",
   "description": "FastGap is a template created ​​by Brazilians to start developing native apps for smartphones using PhoneGap.",
   "private": true,
   "repository": {
@@ -11,22 +11,30 @@
     "fastgap",
     "zepto"
   ],
-  "author": "Gustavo Costa",
-  "license": "MIT",
+  "author": {
+    "name": "Gustavo Costa"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/FastGap/fastgap/issues"
   },
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "express": "3.4.7",
-    "jade": "*",
+  "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "~0.2.4",
-    "grunt-contrib-htmlmin": "~0.1.3",
-    "grunt-contrib-sass": "~0.5.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-imagemin": "~0.3.0"
+    "grunt-contrib-uglify": "~0.2.1",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-jshint": "~0.5.4",
+    "grunt-contrib-imagemin": "~0.1.4",
+    "grunt-contrib-concat": "~0.3.0",
+    "matchdep": "~0.1.2",
+    "grunt-notify": "~0.2.7"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.1.0"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "expr": true,
+  "browser": true,
+  "multistr": true,
+  "globals": {
+    "jQuery": true,
+    "console": true,
+    "module": true,
+    "document": true
+  }
+}
