@@ -1,5 +1,7 @@
 "use strict";
 
+var buildConfig = require('./config/build');
+
 module.exports = function(grunt) {
 
     require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
@@ -8,20 +10,23 @@ module.exports = function(grunt) {
 
         // Default Paths
         paths: {
-          src: "src",
-          release: "release"
+          src: "./src",
+          dist: "./dist"
         },
 
         // Assets directory
         dirs: {
-            js:   "<%= paths.src %>/assets/js",
-            sass: "<%= paths.src %>/assets/scss",
-            css:  "<%= paths.src %>/assets/css",
-            img:  "<%= paths.src %>/assets/images"
+            js:     "<%= paths.src %>/assets/js",
+            sass:   "<%= paths.src %>/assets/scss",
+            css:    "<%= paths.src %>/assets/css",
+            img:    "<%= paths.src %>/assets/images",
+            vendor: "<%= paths.src %>/vendor"
         },
 
-        // Metadata
+        // Load package.jsom
         pkg: grunt.file.readJSON("package.json"),
+
+        // Metadata
         banner:
         "\n" +
         "/*\n" +
@@ -72,14 +77,15 @@ module.exports = function(grunt) {
             options: {
                 mangle: false,
                 banner: "<%= banner %>"
-            },
-            dist: {
-                files: {
-                    "<%= dirs.js %>/main.min.js": [
-                    "<%= dirs.js %>/main.js"
-                    ]
-                }
             }
+            // ,
+            // dist: {
+            //     files: {
+            //         "<%= dirs.js %>/main.min.js": [
+            //         "<%= dirs.js %>/main.js"
+            //         ]
+            //     }
+            // }
         },
 
         // Compass for SCSS
@@ -110,7 +116,36 @@ module.exports = function(grunt) {
               message: "Minified and validated with success!"
             }
           }
+        },
+
+        copy: {
+          distVendor: {
+            files: [{
+              expand: true,
+              cwd: "<%= dirs.vendor %>/",
+              src: buildConfig.vendorFiles,
+              dest: "<%= paths.dist %>/vendor/"
+            }]
+          },
+          distHtml: {
+            files: [{
+              expand: true,
+              cwd: "<%= paths.src %>/",
+              src: buildConfig.htmlFiles,
+              dest: "<%= paths.dist %>/"
+            }]
+          },
+          distCss: {
+            files: [{
+              expand: true,
+              cwd: "<%= dirs.css %>/",
+              src: buildConfig.cssFiles,
+              dest: "<%= paths.dist %>/assets/css"
+            }]
+          }
         }
+
+
 
     };
 
@@ -127,6 +162,20 @@ module.exports = function(grunt) {
 
     // Watch files
     grunt.registerTask( "watch-files", [ "watch" ]);
+
+    // grunt.registerTask('server', [
+    //   'connect',
+    //   'watch'
+    // ]);
+
+    //NOTE(ajoslin): the order of these tasks is very important.
+    grunt.registerTask('build', [
+      'compass',
+      'copy:distVendor',
+      'copy:distHtml',
+      'copy:distCss',
+      'uglify'
+    ]);
 
 
     // Alias
