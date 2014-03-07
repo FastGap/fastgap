@@ -1,13 +1,33 @@
+/* FASTGAP https://github.com/GustavoCostaW/FastGap */
 
-/*
- * -------------------------------------------------------
- * Project: fastgap
- * Version: 0.0.2-alpha
- *
- *
- * Copyright (c) 2014 Gustavo Costa
- * -------------------------------------------------------
- */
+/* CUSTOMIZE YOUR APP */
 
-
-*{margin:0;padding:0;list-style:none;-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-user-select:none}body{width:100%;background:#4a4d4e;overflow:hidden}header#header-app{width:100%;height:85px;text-align:center;background:#fff url("../images/img-logo-fastergap.png") no-repeat center;position:absolute;top:0}#page{position:absolute;width:100%;height:100%;-webkit-transition:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}.title-page{font-size:30px;color:#b8b9b9;padding-bottom:20px;border-bottom:1px solid #ccc;padding-left:20px}#iscroll{position:relative}#content{width:100%;position:absolute;top:85px;left:0px;height:100%;color:#b8b9b9;overflow:hidden}#content a{color:#b8b9b9}#content,#page{-webkit-overflow-scrolling:touch}#menu-button{top:5px;left:3px;position:absolute;z-index:999;display:block;width:80px;color:white;height:70px;text-decoration:none;text-align:center;line-height:37px;background:#345365;background:url("../images/back.png") no-repeat center}menu{position:absolute;top:0;left:0;width:180px}#menu-content{position:relative}#internal-page{padding:10px;padding-bottom:20px}.page-item{overflow:hidden;margin-top:20px;border-bottom:1px solid #ccc;padding-bottom:15px}.page-item img{float:right;width:80px;height:80px;border-radius:60px;margin-left:10px;margin-top:10px}#internal-page h1{font:5px "Source Sans", helvetica, arial, sans-serif;width:100%;font-size:25px;text-align:center}.page-item p{margin-top:10px;text-align:right;font-size:16px}
+#internal-page {
+	padding: 10px;
+	padding-bottom: 20px;
+}
+.page-item {
+	overflow: hidden;
+	margin-top: 20px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+.page-item img {
+	float: right;
+	width: 80px;
+	height: 80px;
+	border-radius: 60px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#internal-page h1 {
+	font: 5px"Source Sans", helvetica, arial, sans-serif;
+	width: 100%;
+	font-size: 25px;
+	text-align: center;
+}
+.page-item p {
+	margin-top: 10px;
+	text-align: right;
+	font-size: 16px;
+}

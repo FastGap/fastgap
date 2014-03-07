@@ -1,22 +1,32 @@
 {
-  "name": "FastGap",
-  "version": "0.0.2",
-  "homepage": "https://github.com/pragmaticivan/fastgap",
-  "authors": [
+	"name": "FastGap",
+	"version": "0.0.3",
+	"homepage": "https://github.com/GustavoCostaW/FastGap",
+	"authors": [
+    "Gustavo Costa <gustavo.costa.w@gmail.com>",
+    "Mayron Cachina <mayroncachina@gmail.com>",
+    "Daniel Torres <daniel@updigital.me>",
     "Ivan Santos <pragmaticivan@gmail.com>"
   ],
-  "description": "Faster PhoneGap Template",
-  "keywords": [
-    "phonegap"
+	"description": "Faster PhoneGap Template",
+	"keywords": [
+    "phonegap",
+    "template",
+    "mobile"
   ],
-  "license": "MIT",
-  "private": true,
-  "ignore": [
+	"license": "MIT",
+	"ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "src/assets/js/vendor",
+    "app/bower_components",
     "test",
     "tests"
-  ]
+  ],
+	"dependencies": {
+		"fastclick": "~0.6.11",
+		"iscroll": "~5.1.1",
+		"zepto": "~1.1.3",
+		"topcoat": "~0.8.0"
+	}
 }

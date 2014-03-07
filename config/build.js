@@ -1,19 +1,20 @@
 module.exports = {
-  vendorFiles: [
+	vendorFiles: [
     'zepto/zepto.min.js',
     'topcoat/css/topcoat-mobile-dark.min.css',
     'fastclick/lib/fastclick.js',
     'iscroll/build/iscroll.js',
-    'hammerjs/hammer.min.js'
   ],
-  htmlFiles: [
+	htmlFiles: [
     'index.html'
   ],
-  cssFiles: [
+	cssFiles: [
     'style.css',
-    'transitions.css'
+    'transitions.css',
+    'fastgap.css',
+    'reset.css'
   ],
-  jsFiles: [
+	jsFiles: [
     'controllers/AppController.js',
     'controllers/HomeController.js',
     'controllers/Page1Controller.js',

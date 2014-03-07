@@ -6,12 +6,19 @@ A jump-start for Fast Phonegap Development.
 
 FastGap is a template created by Brazilians to start developing native apps for smartphones using PhoneGap.
 
-##We use
+<h2>We use in FastGap:</h2>
 
-* [Zepto.js](href='http://zeptojs.com')
-* [TopCoat](href='http://topcoat.io')
-* [IScroll](href='http://cubiq.org/iscroll')
-* [Hammer](href='http://eightmedia.github.io/hammer.js')
+Zepto.js
+http://zeptojs.com
+
+iScroll:
+http://cubiq.org/iscroll
+
+TopCoat
+http://topcoat.io
+
+
+<h2>How to use? </h2>
 
 ##Requires
 
@@ -29,12 +36,19 @@ FastGap is a template created by Brazilians to start developing native apps for 
 
     [sudo] npm install
 
-######Your project is running on localhost:3000
+##### Install this packages with ```bower```
 
-#### Releases
+if you don't have [bower](http://bower.io/) installed run:
 
-soon
+```[sudo] npm install bower -g```
 
-#### VC-deo Demos</h2>
+else, only run:
 
-soon
+```bower install```
+
+
+<h2>Tutorials</h2>
+
+Tutorial - screencast - português
+
+http://www.youtube.com/watch?v=GZpSuTN3ln0
