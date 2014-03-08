@@ -56,7 +56,9 @@ http://topcoat.io
 		//listener menu button
 		$("#page").on('click', "#menu-button", Transition.toggleMenu);
 
-		//scroll
+		//scroll - CSS CALC NOT WORK IN ANDROID < 4.3 AND IOS 6.0 < 
+		$("#iscroll").height(window.innerHeight - FG.$headerApp.height());
+
 		FG.scrollApp = new IScroll("#iscroll", {
 			scrollbars: true,
 			mouseWheel: true,

@@ -2,6 +2,26 @@
 
 /* CUSTOMIZE YOUR APP */
 
+#menu ul li {
+	color: #A02615;
+	font-weight: bold;
+}
+#content {
+	background: white;
+	color: #A02615;
+}
+#content a {
+	font-weight: bold;
+	color: #A02615;
+}
+.title-page {
+	font-size: 30px;
+	color: #A02615;
+	font-weight: bold;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	padding-left: 20px;
+}
 #internal-page {
 	padding: 10px;
 	padding-bottom: 20px;

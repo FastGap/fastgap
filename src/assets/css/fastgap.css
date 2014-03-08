@@ -16,7 +16,7 @@ textarea {
 }
 body {
 	width: 100%;
-	background: #4a4d4e;
+	background: white;
 	overflow: hidden;
 }
 /* APP LOGO IMG */
@@ -25,14 +25,14 @@ header#header-app {
 	width: 100%;
 	height: 85px;
 	text-align: center;
-	background: #FFF url('../images/img-logo-fastergap.png') no-repeat center;
+	background: #ab0207 url('../images/fastgap_logo.jpg') no-repeat center;
 	position: absolute;
 	top: 0;
 }
 /* BOX LOAD PAGES */
 
 #iscroll {
-	height: calc(100% - 85px);
+	/* height: calc(100% - 85px); CSS CALC NOT WORK IN ANDROID < 4.3 AND IOS 6.0 < */
 	/* 100% - header height */
 	position: relative;
 }
@@ -43,24 +43,13 @@ header#header-app {
 	-webkit-transition: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
-.title-page {
-	font-size: 30px;
-	color: #b8b9b9;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #ccc;
-	padding-left: 20px;
-}
 #content {
 	width: 100%;
 	position: absolute;
 	top: 85px;
 	left: 0px;
 	height: 100%;
-	color: #b8b9b9;
 	overflow: hidden;
-}
-#content a {
-	color: #b8b9b9;
 }
 #content,
 #page {
