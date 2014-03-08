@@ -18,19 +18,20 @@ TopCoat
 http://topcoat.io
 
 
-<h2>How to use? </h2>
-
 ##Requires
 
 * [Node.JS](href='http://nodejs.org/')
+* [Bower](href='http://bower.io')
 
-##Usase
+##Usage
 
 ######If you already have installed
 
 #### Clone
 
     git clone https://github.com/FastGap/fastgap.git
+    
+or download zip project
 
 #### Install npm packages
 

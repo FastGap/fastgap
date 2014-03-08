@@ -118,6 +118,7 @@ module.exports = function (grunt) {
 		},
 
 		copy: {
+			/* COPY FONTS FOLDER */
 			copyFolder: {
 				expand: true,
 				flatten: true,
