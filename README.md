@@ -34,12 +34,14 @@ http://topcoat.io
 or download zip project
 
 #### Install npm packages
-
+	
+1 - open your project folder in terminal
+    
     [sudo] npm install
 
 ##### Install this packages with ```bower```
 
-if you don't have [bower](http://bower.io/) installed run:
+2 - if you don't have [bower](http://bower.io/) installed run:
 
 ```[sudo] npm install bower -g```
 
@@ -47,6 +49,7 @@ else, only run:
 
 ```bower install```
 
+copy the /dist/ folder for you app
 
 <h2>Tutorials</h2>
 
