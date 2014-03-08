@@ -21,7 +21,8 @@ module.exports = function (grunt) {
 			css: "<%= paths.src %>/assets/css",
 			img: "<%= paths.src %>/assets/images",
 			vendor: "<%= paths.src %>/vendor",
-			pages: "<%= paths.src %>/pages"
+			pages: "<%= paths.src %>/pages",
+			fonts: "<%= paths.src %>/vendor/topcoat/font",
 		},
 
 		// Load package.jsom
@@ -119,12 +120,13 @@ module.exports = function (grunt) {
 
 		copy: {
 			/* COPY FONTS FOLDER */
-			copyFolder: {
-				expand: true,
-				flatten: true,
-				src: ['src/vendor/topcoat/font/**'],
-				dest: 'dist/vendor/topcoat/font',
-				filter: 'isFile'
+			distFonts: {
+				files: [{
+					expand: true,
+					cwd: "<%= dirs.fonts %>",
+					src: "**",
+					dest: "<%= paths.dist %>/vendor/topcoat/font"
+            }]
 			},
 			distVendor: {
 				files: [{
