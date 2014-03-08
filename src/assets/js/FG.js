@@ -1,4 +1,4 @@
-/* FASTGAP https://github.com/GustavoCostaW/FastGap 
+/* FASTGAP https://github.com/FastGap/FastGap 
 
 IMPORTANT, READ LIBRARY DOCS FOR BETTER CUSTOMIZATION 
 
@@ -57,9 +57,6 @@ http://topcoat.io
 		$("#page").on('click', "#menu-button", Transition.toggleMenu);
 
 		//scroll
-		$("#iscroll").height(window.innerHeight - FG.$headerApp.height());
-		$("#menu-content").height(window.innerHeight);
-
 		FG.scrollApp = new IScroll("#iscroll", {
 			scrollbars: true,
 			mouseWheel: true,

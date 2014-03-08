@@ -1,4 +1,4 @@
-/* FASTGAP https://github.com/GustavoCostaW/FastGap */
+/* FASTGAP https://github.com/FastGap/FastGap */
 
 (function (window) {
 

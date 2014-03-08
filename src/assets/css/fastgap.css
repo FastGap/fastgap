@@ -31,6 +31,11 @@ header#header-app {
 }
 /* BOX LOAD PAGES */
 
+#iscroll {
+	height: calc(100% - 85px);
+	/* 100% - header height */
+	position: relative;
+}
 #page {
 	position: absolute;
 	width: 100%;
@@ -44,9 +49,6 @@ header#header-app {
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
 	padding-left: 20px;
-}
-#iscroll {
-	position: relative;
 }
 #content {
 	width: 100%;
@@ -88,7 +90,9 @@ menu {
 	top: 0;
 	left: 0;
 	width: 180px;
+	height: 100%;
 }
 #menu-content {
+	height: 100%;
 	position: relative;
 }
