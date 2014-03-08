@@ -1,4 +1,4 @@
-/* FASTGAP https://github.com/GustavoCostaW/FastGap */
+/* FASTGAP https://github.com/FastGap/FastGap */
 
 (function (window) {
 
@@ -55,6 +55,7 @@
 		}
 		//refresh scroll
 		FG.scrollApp.refresh();
+		FG.scrollApp.scrollTo(0);
 		//hide my menu
 		Transition.hideMenu();
 		//remove transition in my app

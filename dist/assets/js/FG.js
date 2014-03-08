@@ -1,4 +1,4 @@
-/* FASTGAP https://github.com/GustavoCostaW/FastGap 
+/* FASTGAP https://github.com/FastGap/FastGap 
 
 IMPORTANT, READ LIBRARY DOCS FOR BETTER CUSTOMIZATION 
 
@@ -56,9 +56,8 @@ http://topcoat.io
 		//listener menu button
 		$("#page").on('click', "#menu-button", Transition.toggleMenu);
 
-		//scroll
+		//scroll - CSS CALC NOT WORK IN ANDROID < 4.3 AND IOS 6.0 < 
 		$("#iscroll").height(window.innerHeight - FG.$headerApp.height());
-		$("#menu-content").height(window.innerHeight);
 
 		FG.scrollApp = new IScroll("#iscroll", {
 			scrollbars: true,
