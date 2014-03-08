@@ -31,7 +31,7 @@ http://topcoat.io
 
     git clone https://github.com/FastGap/fastgap.git
     
-or download zip project
+or [download](https://github.com/FastGap/fastgap/archive/master.zip) zip project
 
 #### Install npm packages
 	
