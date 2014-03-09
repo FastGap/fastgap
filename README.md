@@ -1,6 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/FastGap/fastgap.png?label=ready)](https://waffle.io/FastGap/fastgap)  
-
-# FastGap
+# FastGap [![Stories in Ready](https://badge.waffle.io/FastGap/fastgap.png?label=ready)](https://waffle.io/FastGap/fastgap)
 
 > FastGap is a jump-start template for developing native apps for smartphones using Phonegap.
 
