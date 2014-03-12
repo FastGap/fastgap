@@ -2,26 +2,22 @@
 <!doctype html>
 <!-- YOUR LANG -->
 <html lang="pt-br">
-
 <head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>FastGap Project</title>
+
 	<!-- LOAD CSS -->
 	<link rel="stylesheet" href="vendor/topcoat/css/topcoat-mobile-light.min.css" />
+
 	<!-- STYLE FASTGAP DEFAULTS AND TRANSITIONS DEFAULTS-->
 	<link rel="stylesheet" href="assets/css/reset.css" />
 	<link rel="stylesheet" href="assets/css/fastgap.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/css/transitions.css" />
-	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="assets/css/menu-transitions.css" />
+
 	<!-- JAVASCRIPT -->
-	<!-- CONTROLLERS -->
-	<script src="assets/js/controllers/AppController.js"></script>
-	<script src="assets/js/controllers/HomeController.js"></script>
-	<!-- CUSTOM YOUR CONTROLLERS-->
-	<script src="assets/js/controllers/Page1Controller.js"></script>
-	<script src="assets/js/controllers/Page2Controller.js"></script>
-	<script src="assets/js/controllers/Page3Controller.js"></script>
-	<script src="assets/js/controllers/Page4Controller.js"></script>
-	<script src="assets/js/controllers/Page5Controller.js"></script>
 
 	<!-- LIBRARIES (load with bower) -->
 	<script src="vendor/zepto/zepto.min.js"></script>
@@ -29,59 +25,74 @@
 	<script src="vendor/iscroll/build/iscroll.js"></script>
 
 	<!-- FASTGAP -->
-	<script src="assets/js/History.js"></script>
 	<script src="assets/js/FG.js"></script>
-	<script src="assets/js/Navigator.js"></script>
-	<script src="assets/js/Transition.js"></script>
-	<script src="assets/js/PageLoad.js"></script>
-	<script src="assets/js/index.js"></script>
+	<script src="assets/js/FG.Transition.js"></script>
+	<script src="assets/js/FG.Menu.js"></script>
+	<script src="assets/js/FG.PageLoader.js"></script>
+	<script src="assets/js/FG.Controller.js"></script>
+	<script src="assets/js/FG.Router.js"></script>
+	<script src="assets/js/FG.Bootstrap.js"></script>
 
-	<!-- VIEWPORT -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>FastGap Project</title>
+	<!-- CONTROLLERS -->
+	<script src="assets/js/controllers/HomeController.js"></script>
+
+	<!-- CUSTOM YOUR CONTROLLERS-->
+	<script src="assets/js/controllers/Page1Controller.js"></script>
+	<script src="assets/js/controllers/Page2Controller.js"></script>
+	<script src="assets/js/controllers/Page3Controller.js"></script>
+	<script src="assets/js/controllers/Page4Controller.js"></script>
+	<script src="assets/js/controllers/Page5Controller.js"></script>
+
+	<!-- BOOT -->
+	<script src="assets/js/app.js"></script>
 </head>
 
 <body>
 	<!-- BOX CONTENT LOAD PAGES WITH AJAX-->
 	<div id="page">
+
 		<!-- MENU -->
 		<menu id="menu">
 			<div class="topcoat-list" id="menu-content">
 				<ul class="topcoat-list__container">
-					<li class="topcoat-list__item botoes-app" data-url="home.html">
+					<li class="topcoat-list__item caller" data-path="home">
 						Home
 					</li>
-					<li class="topcoat-list__item botoes-app" data-url="page1.html">
-						Transition 1 + SCROLL PERFORMANCE TEST
+					<li class="topcoat-list__item caller" data-path="page1">
+						Transition 1 + SCROLL TEST
 					</li>
-					<li class="topcoat-list__item botoes-app" data-url="page2.html">
-						Transition 2 + CALLBACK EVENTS
+					<li class="topcoat-list__item caller" data-path="page2">
+						Transition 2 + CONTROLLER EVENTS
 					</li>
-					<li class="topcoat-list__item botoes-app" data-url="page3.html">
+					<li class="topcoat-list__item caller" data-path="page3">
 						Transition 3
-					</li>
-					<li class="topcoat-list__item botoes-app" data-url="page4.html">
+					</li>	
+					<li class="topcoat-list__item caller" data-path="page4">
 						Transition 4
-					</li>
-					<li class="topcoat-list__item botoes-app" data-url="page5.html">
+					</li>	
+					<li class="topcoat-list__item caller" data-path="page5">
 						Transition 5
 					</li>
 				</ul>
 			</div>
 		</menu>
 
-		<header id="header-app">
-			<!-- APP IMG LOAD WITH CSS -->
-			<div id="menu-button"></div>
-		</header>
-		<!-- DYNAMIC CONTENT -->
-		<div id="content">
-			<div id="iscroll">
-				<div id="load-content-here">
+		<!-- APPLICATION STAGE -->
+		<section id="stage">
+			<header id="header-app">
+				<!-- APP IMG LOAD WITH CSS -->	
+				<div id="menu-button"></div>
+			</header>
 
+			<!-- DYNAMIC CONTENT -->
+			<div id="content" class="transition">
+				<div id="iscroll">
+					<div id="load-content-here">
+						
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</div>
 </body>
 

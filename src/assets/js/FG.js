@@ -1,81 +1,57 @@
-/* FASTGAP https://github.com/FastGap/FastGap 
+// 
+//  _____         _    ____             
+// |  ___|_ _ ___| |_ / ___| __ _ _ __  
+// | |_ / _` / __| __| |  _ / _` | '_ \ 
+// |  _| (_| \__ \ |_| |_| | (_| | |_) |
+// |_|  \__,_|___/\__|\____|\__,_| .__/ 
+//                               |_|
+//                               
+// https://github.com/FastGap/fastgap
 
-IMPORTANT, READ LIBRARY DOCS FOR BETTER CUSTOMIZATION 
+/**
+ * This object is the project's namespace
+ * @module FG
+ */
+(function(window) {
+	var FG;
 
-http://iscrolljs.com
-http://zeptojs.com
-http://topcoat.io
-
-
-*/
-
-(function (window) {
-	// FastGap object
-	var FG = window.FG = {
+	FG = {
 		scrollApp: null,
 		scrollMenu: null,
+		controllers: {},
 		currentController: null,
+		first: true,
 		$contentLoad: null,
 		$menu: null,
 		$content: null,
-		$headerApp: null,
+		$header: null,
+		$stage: null,
 	};
-	//init project
-	FG.init = function () {
-		FG.setDomElements();
-		this.addEventListeners();
-		this.definitions();
-		/* PHONEGAP EVENT DEVICE READY LOAD HOME PAGE */
 
-		//document.addEventListener("deviceready",function(){
-		Navigator.loadPage('home.html');
-		//});
+	/**
+	 * Implements a extends utils
+	 * @param  {Mixed}    superclass Object or function that will be extended
+	 * @param  {Mixed} 	  def        Object or function with override implementation
+	 * @return {Function}
+	 */	
+	FG.extend = function(superclass, def){
+		var hasProp = {}.hasOwnProperty,
+			parent = function () {},
+			child = (typeof def === 'function') ? new def() : def,
+			extended = function () {};
+
+		parent.prototype = (typeof superclass === 'function') ? new superclass() : superclass;
+		extended.prototype = new parent();
+
+		for (var key in child) { 
+			if (hasProp.call(child, key)) {
+				extended.prototype[key] = child[key];
+			} 
+		}
+
+		return extended;
 	};
-	//set fg elements
-	FG.setDomElements = function () {
-		FG.$contentLoad = $("#load-content-here");
-		FG.$menu = $("#menu");
-		FG.$content = $("#content");
-		FG.$headerApp = $('#header-app');
-	}
-	//set definitions project
-	FG.definitions = function () {
-		//fastclick, performance library of mouse events to touch events
-		FastClick.attach(document.body);
-		//block drag "navegator box"
-		$(document).on('touchmove', function (event) {
-			event.preventDefault();
-		});
-	};
-	//set fastgap listeners
-	FG.addEventListeners = function () {
-		//load internal pages
-		$("#page").on('click', '.botoes-app', Navigator.loadPage);
-		//listener end transition
-		FG.$content.on("webkitTransitionEnd transitionend MSTransitionEnd", Transition.End);
-		//listener menu button
-		$("#page").on('click', "#menu-button", Transition.toggleMenu);
 
-		//scroll - CSS CALC NOT WORK IN ANDROID < 4.3 AND IOS 6.0 < 
-		$("#iscroll").height(window.innerHeight - FG.$headerApp.height());
-
-		FG.scrollApp = new IScroll("#iscroll", {
-			scrollbars: true,
-			mouseWheel: true,
-			interactiveScrollbars: true,
-			/* Enable fade in scroll set true, but not work and bug Scroll in Android 2.3
-			,fadeScrollbars: true
-			*/
-		});
-
-		FG.scrollMenu = new IScroll("#menu-content", {
-			scrollbars: true,
-			mouseWheel: true,
-			interactiveScrollbars: true
-			/* Enable fade in scroll set true, but not work and bug Scroll in Android 2.3
-			,fadeScrollbars: true
-			*/
-		});
-
-	};
+	// Exports
+	window.FG = FG;
 })(window);

@@ -1,4 +1,4 @@
-//
+// 
 //  _____         _    ____             
 // |  ___|_ _ ___| |_ / ___| __ _ _ __  
 // | |_ / _` / __| __| |  _ / _` | '_ \ 
@@ -8,14 +8,9 @@
 //                               
 // https://github.com/FastGap/fastgap
 
-(function(window) {
-    var HomeController;
+$(document).ready(function() {
 
-    // Create a new controller extending the FG.Controller superclass
-    HomeController = FG.extend(FG.Controller, {
-    	// Put your logic here
-    });
+	// Do the magical happen
+    FG.Bootstrap.init();
 
-    // Exports
-    FG.controllers.HomeController = HomeController;
-})(window);
+});

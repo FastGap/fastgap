@@ -6,6 +6,13 @@
 	color: #A02615;
 	font-weight: bold;
 }
+
+#stage {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
 #content {
 	background: white;
 	color: #A02615;

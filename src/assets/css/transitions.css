@@ -1,74 +1,28 @@
-
-/* MENU TRANSITIONS */
-
-menu {
-
-	-webkit-transition: translate3d(0, 0, 0);
-
-	transform: translate3d(0, 0, 0);
-
-	-webkit-transition: all 0.3s ease;
-
-	-webkit-transform: translateX(-180px);
-
-}
-
-.transitionMenuAppStart {
-
-	-webkit-transform: translateX(0px);
-
-	-webkit-transform: translate3d(0px, 0, 0);
-
-}
-
-#header-app,
-
-#content {
-
-	-webkit-transition: translate3d(0, 0, 0);
-
-	transform: translate3d(0, 0, 0);
-
+/**
+ * MAIN CONTENT TRANSITIONS
+ */
+.transition{
 	-webkit-transition: all 0.2s ease;
-
 }
 
-.transitionContentAppStart {
-
-	-webkit-transform: translateX(180px);
-
-}
-
-.transitionApp1 {
-
+.transition.fade {
 	opacity: 0;
-
 }
 
-.transitionApp2 {
-
+.transition.slide-x {
 	-webkit-transform: translateX(100%);
-
 }
 
-.transitionApp3 {
-
-	-webkit-transform: scale(0.1);
-
+.transition.scale {
+	-webkit-transform: scale(0.01);
 }
 
-.transitionApp4 {
-
-	-webkit-transform: rotateY(180deg);
-
-	opacity: 0;
-
+.transition.rotate-x {
+    -webkit-transform: rotateY(180deg);
+    opacity: 0;
 }
 
-.transitionApp5 {
-
-	opacity: 0;
-
-	-webkit-transform: rotateX(180deg);
-
+.transition.rotate-y {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
 }
