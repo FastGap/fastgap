@@ -2,18 +2,14 @@
 
 IMPORTANT, READ LIBRARY DOCS FOR BETTER CUSTOMIZATION 
 
-http://iscrolljs.com
 http://zeptojs.com
 http://topcoat.io
-
-
 */
 
 (function (window) {
 	// FastGap object
 	var FG = window.FG = {
 		scrollApp: null,
-		scrollMenu: null,
 		currentController: null,
 		$contentLoad: null,
 		$menu: null,
@@ -28,54 +24,54 @@ http://topcoat.io
 		/* PHONEGAP EVENT DEVICE READY LOAD HOME PAGE */
 
 		//document.addEventListener("deviceready",function(){
-		Navigator.loadPage('home.html');
+		//prevent bug call transitionend
+		setTimeout(function () {
+			Navigator.loadPage('home.html');
+		}, 10);
 		//});
 	};
 	//set fg elements
 	FG.setDomElements = function () {
-		FG.$contentLoad = $("#load-content-here");
+		FG.$contentLoad = $("#scroll");
 		FG.$menu = $("#menu");
 		FG.$content = $("#content");
 		FG.$headerApp = $('#header-app');
+		FG.$scrollApp = document.getElementById("scroll");
 	}
 	//set definitions project
 	FG.definitions = function () {
 		//fastclick, performance library of mouse events to touch events
 		FastClick.attach(document.body);
-		//block drag "navegator box"
+
+
+		/*block drag "navegator box", this code locks the drag in the browser 			but it locks the scroll, BlackBerry and Android is not necessary, 			and to avoid this in iOS add the following code in config.xml 
+
+		<preference name = "DisallowOverscroll" value = "true" />
+		
+		
 		$(document).on('touchmove', function (event) {
-			event.preventDefault();
-		});
-	};
+			e.preventDefault();
+		});*/
+	}
 	//set fastgap listeners
 	FG.addEventListeners = function () {
 		//load internal pages
 		$("#page").on('click', '.botoes-app', Navigator.loadPage);
+
+
 		//listener end transition
-		FG.$content.on("webkitTransitionEnd transitionend MSTransitionEnd", Transition.End);
+		FG.$content.on("webkitTransitionEnd oTransitionEnd otransitionend transitionend msTransitionEnd", Transition.End);
+
+
 		//listener menu button
 		$("#page").on('click', "#menu-button", Transition.toggleMenu);
 
+		//zepto swipe events
+		$(document).on('swipeRight', Transition.showMenu);
+		$(document).on('swipeLeft', Transition.hideMenu);
+
 		//scroll - CSS CALC NOT WORK IN ANDROID < 4.3 AND IOS 6.0 < 
-		$("#iscroll").height(window.innerHeight - FG.$headerApp.height());
-
-		FG.scrollApp = new IScroll("#iscroll", {
-			scrollbars: true,
-			mouseWheel: true,
-			interactiveScrollbars: true,
-			/* Enable fade in scroll set true, but not work and bug Scroll in Android 2.3
-			,fadeScrollbars: true
-			*/
-		});
-
-		FG.scrollMenu = new IScroll("#menu-content", {
-			scrollbars: true,
-			mouseWheel: true,
-			interactiveScrollbars: true
-			/* Enable fade in scroll set true, but not work and bug Scroll in Android 2.3
-			,fadeScrollbars: true
-			*/
-		});
+		$("#scroll").height(window.innerHeight - FG.$headerApp.height());
 
 	};
 })(window);

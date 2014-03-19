@@ -9,6 +9,7 @@ body {
 	-webkit-tap-highlight-color: transparent;
 	user-select: none;
 	webkit-user-select: none;
+	overflow: hidden;
 }
 input,
 textarea {
@@ -22,26 +23,32 @@ body {
 /* APP LOGO IMG */
 
 header#header-app {
+	position: fixed;
 	width: 100%;
 	height: 85px;
 	text-align: center;
 	background: #ab0207 url('../images/fastgap_logo.jpg') no-repeat center;
-	position: absolute;
 	top: 0;
 }
 /* BOX LOAD PAGES */
 
-#iscroll {
-	/* height: calc(100% - 85px); CSS CALC NOT WORK IN ANDROID < 4.3 AND IOS 6.0 < */
-	/* 100% - header height */
-	position: relative;
+/* SCROLL */
+
+.overthrow-enabled .overthrow {
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
 }
 #page {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	-webkit-transition: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
+	overflow: hidden;
+}
+.overthrow-enabled #scroll {
+	background: #f4f4f4;
 }
 #content {
 	width: 100%;

@@ -20,14 +20,8 @@
 	font-weight: bold;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
-	padding-left: 20px;
-}
-#internal-page {
-	padding: 10px;
-	padding-bottom: 20px;
 }
 .page-item {
-	overflow: hidden;
 	margin-top: 20px;
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 15px;
@@ -40,6 +34,9 @@
 	margin-left: 10px;
 	margin-top: 10px;
 }
+#internal-page {
+	width: 100%;
+}
 #internal-page h1 {
 	font: 5px"Source Sans", helvetica, arial, sans-serif;
 	width: 100%;
@@ -48,6 +45,6 @@
 }
 .page-item p {
 	margin-top: 10px;
-	text-align: right;
+	text-align: center;
 	font-size: 16px;
 }

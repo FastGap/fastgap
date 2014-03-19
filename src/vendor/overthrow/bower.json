@@ -1,0 +1,11 @@
+{
+  "name": "overthrow",
+  "version": "0.7.0",
+  "main": "dist/overthrow.js",
+  "sidescroller": "dist/overthrow.sidescroller.js",
+  "ignore": [
+    "examples",
+    "test",
+    "index.html"
+  ]
+}

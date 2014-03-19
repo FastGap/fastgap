@@ -1,9 +1,13 @@
 module.exports = {
 	vendorFiles: [
     'zepto/zepto.min.js',
+    'zepto/zepto-touch.js',
     'topcoat/css/topcoat-mobile-light.min.css',
     'fastclick/lib/fastclick.js',
-    'iscroll/build/iscroll.js',
+    'overthrow/src/overthrow-detect.js',
+    'overthrow/src/overthrow-polyfill.js',
+	'overthrow/src/overthrow-toss.js',
+	'overthrow/src/overthrow-init.js',
   ],
 	htmlFiles: [
     'index.html'

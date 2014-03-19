@@ -7,10 +7,11 @@
 	<!-- LOAD CSS -->
 	<link rel="stylesheet" href="vendor/topcoat/css/topcoat-mobile-light.min.css" />
 	<!-- STYLE FASTGAP DEFAULTS AND TRANSITIONS DEFAULTS-->
+
+	<link rel="stylesheet" href="assets/css/transitions.css" />
 	<link rel="stylesheet" href="assets/css/reset.css" />
 	<link rel="stylesheet" href="assets/css/fastgap.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
-	<link rel="stylesheet" href="assets/css/transitions.css" />
 	<meta charset="UTF-8" />
 	<!-- JAVASCRIPT -->
 	<!-- CONTROLLERS -->
@@ -25,8 +26,14 @@
 
 	<!-- LIBRARIES (load with bower) -->
 	<script src="vendor/zepto/zepto.min.js"></script>
+	<script src="vendor/zepto/zepto-touch.js"></script>
 	<script src="vendor/fastclick/lib/fastclick.js"></script>
-	<script src="vendor/iscroll/build/iscroll.js"></script>
+	<!-- SCROLL (load with bower) -->
+	<script src="vendor/overthrow/src/overthrow-detect.js"></script>
+	<script src="vendor/overthrow/src/overthrow-polyfill.js"></script>
+	<script src="vendor/overthrow/src/overthrow-toss.js"></script>
+	<script src="vendor/overthrow/src/overthrow-init.js"></script>
+
 
 	<!-- FASTGAP -->
 	<script src="assets/js/History.js"></script>
@@ -52,7 +59,7 @@
 						Home
 					</li>
 					<li class="topcoat-list__item botoes-app" data-url="page1.html">
-						Transition 1 + SCROLL PERFORMANCE TEST
+						Transition 1 + SCROLL INFINITE PERFORMANCE TEST
 					</li>
 					<li class="topcoat-list__item botoes-app" data-url="page2.html">
 						Transition 2 + CALLBACK EVENTS
@@ -76,10 +83,9 @@
 		</header>
 		<!-- DYNAMIC CONTENT -->
 		<div id="content">
-			<div id="iscroll">
-				<div id="load-content-here">
+			<!-- load content here -->
+			<div id="scroll" class="overthrow">
 
-				</div>
 			</div>
 		</div>
 	</div>

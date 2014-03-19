@@ -53,9 +53,7 @@
 		if (FG.currentController != null) {
 			FG.currentController.initialize();
 		}
-		//refresh scroll
-		FG.scrollApp.refresh();
-		FG.scrollApp.scrollTo(0);
+
 		//hide my menu
 		Transition.hideMenu();
 		//remove transition in my app
