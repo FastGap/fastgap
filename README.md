@@ -10,7 +10,7 @@ Zepto.js
 http://zeptojs.com
 
 Overthrow:
-filamentgroup.github.io/Overthrow/
+http://filamentgroup.github.io/Overthrow/
 
 TopCoat
 http://topcoat.io
