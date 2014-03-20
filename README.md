@@ -9,8 +9,8 @@
 Zepto.js
 http://zeptojs.com
 
-iScroll:
-http://cubiq.org/iscroll
+Overthrow:
+filamentgroup.github.io/Overthrow/
 
 TopCoat
 http://topcoat.io

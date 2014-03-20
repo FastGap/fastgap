@@ -1,13 +1,11 @@
-/* FASTGAP https://github.com/GustavoCostaW/FastGap 
+/* FASTGAP https://github.com/FastGap/FastGap 
 
 IMPORTANT, READ LIBRARY DOCS FOR BETTER CUSTOMIZATION 
 
-http://iscrolljs.com
 http://zeptojs.com
 http://topcoat.io
-
-
 */
+
 
 var AppController = function () {};
 
