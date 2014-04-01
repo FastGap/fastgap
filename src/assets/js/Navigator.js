@@ -9,14 +9,14 @@
 	};
 	//load page
 	Navigator.loadPage = function (url) {
-		Transition.control = true;
+		//if string page is url
 		if (typeof url == "string") {
 			Navigator.currentPage = url;
 		} else {
+			// or page is data-url attr in menu ul li element
 			Navigator.currentPage = $(this).data("url");
 		}
-
-		Transition.class = Transition.getClassAnimation(Navigator.currentPage);
+		//start transition
 		Transition.start();
 	};
 

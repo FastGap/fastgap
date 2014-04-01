@@ -7,35 +7,15 @@ menu {
 
 	transform: translate3d(0, 0, 0);
 
-	-webkit-transition: all 0.2s ease;
-
-	-webkit-transform: translateX(-180px);
-
 }
 
-.transitionMenuAppStart {
-
-	-webkit-transform: translateX(0px);
-
-	-webkit-transform: translate3d(0px, 0, 0);
-
-}
-
-#header-app,
-
-#content {
-
-	-webkit-transition: translate3d(0, 0, 0);
+#scroll {
 
 	transform: translate3d(0, 0, 0);
 
+	-webkit-backface-visibility: hidden;
+
 	-webkit-transition: all 0.2s ease;
-
-}
-
-.transitionContentAppStart {
-
-	-webkit-transform: translateX(180px);
 
 }
 

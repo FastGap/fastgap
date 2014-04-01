@@ -8,6 +8,8 @@ module.exports = {
     'overthrow/src/overthrow-polyfill.js',
 	'overthrow/src/overthrow-toss.js',
 	'overthrow/src/overthrow-init.js',
+	'snapjs/snap.min.js',
+	'snapjs/snap.css'
   ],
 	htmlFiles: [
     'index.html'

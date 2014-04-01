@@ -1,16 +1,12 @@
-/* FASTGAP https://github.com/FastGap/FastGap 
+/* FASTGAP https://github.com/GustavoCostaW/FastGap */
 
-IMPORTANT, READ LIBRARY DOCS FOR BETTER CUSTOMIZATION 
-
-http://iscrolljs.com
-http://zeptojs.com
-http://topcoat.io
-
-
-*/
 
 /* GLOBAL VAR */
 var app;
+/* SNAP JS*/
+var snapper;
+/*FIRST REQUEST APP*/
+var firstrequestapp = true;
 
 //ready app
 $(document).ready(function () {
