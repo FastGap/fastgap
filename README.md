@@ -15,15 +15,28 @@ http://filamentgroup.github.io/Overthrow/
 TopCoat
 http://topcoat.io
 
+Snap.JS
+https://github.com/jakiestfu/Snap.js/
 
-##Requires
-
-* [Node.JS](href='http://nodejs.org/')
-* [Bower](href='http://bower.io')
 
 ##Usage
 
-######If you already have installed
+##For Production
+
+1 - [download](https://github.com/FastGap/fastgap/archive/master.zip) zip project or clone FastGap Project
+
+2 - copy /dist/ folder
+
+3 - enjoy
+
+##For Development
+
+#Requires
+
+* [Node.JS](href='http://nodejs.org/')
+* [Bower](href='http://bower.io')
+* [Grunt](href='http://gruntjs.com')
+
 
 #### Clone
 
@@ -32,22 +45,25 @@ http://topcoat.io
 or [download](https://github.com/FastGap/fastgap/archive/master.zip) zip project
 
 #### Install npm packages
-	
-1 - open your project folder in terminal
+
+1 - open src folder in terminal
     
-    [sudo] npm install
-
-##### Install this packages with ```bower```
-
-2 - if you don't have [bower](http://bower.io/) installed run:
+2 - install grunt
+    [sudo] npm install grunt-cli -g
+	
+3 - install bower
 
 ```[sudo] npm install bower -g```
 
-else, only run:
+4 - install npm dependencies 
+
+    [sudo] npm install 
+
+4 - install bower components
 
 ```bower install```
 
-copy the /dist/ folder for you app
+5 - code you project in /src/
 
 <h2>Tutorials</h2>
 
