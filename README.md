@@ -38,6 +38,8 @@ https://github.com/jakiestfu/Snap.js/
 * [Grunt](href='http://gruntjs.com')
 
 
+######If you already have installed
+
 #### Clone
 
     git clone https://github.com/FastGap/fastgap.git

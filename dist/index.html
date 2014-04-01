@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="assets/css/reset.css" />
 	<link rel="stylesheet" href="assets/css/fastgap.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="vendor/snapjs/snap.css" />
 	<meta charset="UTF-8" />
 	<!-- JAVASCRIPT -->
 	<!-- CONTROLLERS -->
@@ -33,6 +34,8 @@
 	<script src="vendor/overthrow/src/overthrow-polyfill.js"></script>
 	<script src="vendor/overthrow/src/overthrow-toss.js"></script>
 	<script src="vendor/overthrow/src/overthrow-init.js"></script>
+	<!-- SNAPJS -->
+	<script src="vendor/snapjs/snap.min.js"></script>
 
 
 	<!-- FASTGAP -->
@@ -51,38 +54,41 @@
 <body>
 	<!-- BOX CONTENT LOAD PAGES WITH AJAX-->
 	<div id="page">
-		<!-- MENU -->
-		<menu id="menu">
-			<div class="topcoat-list" id="menu-content">
-				<ul class="topcoat-list__container">
-					<li class="topcoat-list__item botoes-app" data-url="home.html">
-						Home
-					</li>
-					<li class="topcoat-list__item botoes-app" data-url="page1.html">
-						Transition 1 + SCROLL INFINITE PERFORMANCE TEST
-					</li>
-					<li class="topcoat-list__item botoes-app" data-url="page2.html">
-						Transition 2 + CALLBACK EVENTS
-					</li>
-					<li class="topcoat-list__item botoes-app" data-url="page3.html">
-						Transition 3
-					</li>
-					<li class="topcoat-list__item botoes-app" data-url="page4.html">
-						Transition 4
-					</li>
-					<li class="topcoat-list__item botoes-app" data-url="page5.html">
-						Transition 5
-					</li>
-				</ul>
-			</div>
-		</menu>
+		<div class="snap-drawers">
+			<!-- MENU -->
+			<menu id="menu">
+				<div class="topcoat-list" id="menu-content">
+					<ul class="topcoat-list__container">
+						<li class="topcoat-list__item botoes-app" data-url="home.html">
+							Home
+						</li>
+						<li class="topcoat-list__item botoes-app" data-url="page1.html">
+							Item 1 + SCROLL INFINITE PERFORMANCE TEST
+						</li>
+						<li class="topcoat-list__item botoes-app" data-url="page2.html">
+							Item 2 + CALLBACK EVENTS
+						</li>
+						<li class="topcoat-list__item botoes-app" data-url="page3.html">
+							Item 3
+						</li>
+						<li class="topcoat-list__item botoes-app" data-url="page4.html">
+							Item 4
+						</li>
+						<li class="topcoat-list__item botoes-app" data-url="page5.html">
+							Item 5
+						</li>
+					</ul>
+				</div>
+			</menu>
+		</div>
 
-		<header id="header-app">
-			<!-- APP IMG LOAD WITH CSS -->
-			<div id="menu-button"></div>
-		</header>
 		<!-- DYNAMIC CONTENT -->
-		<div id="content">
+		<div id="content" class="snap-content">
+			<!-- HEADER -->
+			<header id="header-app">
+				<!-- APP IMG LOAD WITH CSS -->
+				<div id="menu-button"></div>
+			</header>
 			<!-- load content here -->
 			<div id="scroll" class="overthrow">
 

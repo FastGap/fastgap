@@ -1,10 +1,5 @@
-/* FASTGAP https://github.com/FastGap/FastGap 
+/* FASTGAP https://github.com/GustavoCostaW/FastGap */
 
-IMPORTANT, READ LIBRARY DOCS FOR BETTER CUSTOMIZATION 
-
-http://zeptojs.com
-http://topcoat.io
-*/
 
 (function (window) {
 	// FastGap object
@@ -26,6 +21,7 @@ http://topcoat.io
 		//document.addEventListener("deviceready",function(){
 		//prevent bug call transitionend
 		setTimeout(function () {
+			Transition.control = true;
 			Navigator.loadPage('home.html');
 		}, 10);
 		//});
@@ -55,22 +51,27 @@ http://topcoat.io
 	}
 	//set fastgap listeners
 	FG.addEventListeners = function () {
+		//orientation change event
+		window.addEventListener("orientationchange", function () {
+			//scroll - CSS CALC() NOT WORKS IN ANDROID < 4.3 AND IOS 6.0 < 
+			$("#scroll").height(window.innerHeight - FG.$headerApp.height());
+		}, false);
+
 		//load internal pages
 		$("#page").on('click', '.botoes-app', Navigator.loadPage);
-
-
-		//listener end transition
-		FG.$content.on("webkitTransitionEnd oTransitionEnd otransitionend transitionend msTransitionEnd", Transition.End);
-
 
 		//listener menu button
 		$("#page").on('click', "#menu-button", Transition.toggleMenu);
 
-		//zepto swipe events
-		$(document).on('swipeRight', Transition.showMenu);
-		$(document).on('swipeLeft', Transition.hideMenu);
+		//SNAP JS
+		snapper = new Snap({
+			element: document.getElementById('content'), //your content
+			maxPosition: $("menu").width(), //width of the menu
+			disable: 'right', //disable right menu
+			transitionSpeed: 0.2 //speed transition
+		});
 
-		//scroll - CSS CALC NOT WORK IN ANDROID < 4.3 AND IOS 6.0 < 
+		//scroll - CSS CALC() NOT WORKS IN ANDROID < 4.3 AND IOS 6.0 < 
 		$("#scroll").height(window.innerHeight - FG.$headerApp.height());
 
 	};

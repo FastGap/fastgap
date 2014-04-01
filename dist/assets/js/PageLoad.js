@@ -57,7 +57,8 @@
 		//hide my menu
 		Transition.hideMenu();
 		//remove transition in my app
-		FG.$content.removeClass(Transition.class);
+		Transition.control = true;
+		FG.$contentLoad.removeClass(Transition.class);
 	};
 
 
