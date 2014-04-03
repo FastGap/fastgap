@@ -48,6 +48,7 @@ header#header-app {
 }
 .overthrow-enabled #scroll {
 	background: #f4f4f4;
+	height:84%;
 }
 #content {
 	overflow: hidden;
