@@ -69,7 +69,7 @@ or [download](https://github.com/FastGap/fastgap/archive/master.zip) zip project
 
 <h2>Intro</h2>
 
-[![Alt text for your video](http://img.youtube.com/vi/T-D1KVIuvjA/0.jpg)](http://www.youtube.com/watch?v=T-D1KVIuvjA)
+[![Alt text for your video](http://img.youtube.com/vi/qWncqneN5HQ/0.jpg)](http://www.youtube.com/watch?v=qWncqneN5HQ)
 
 <h2>Tutorials</h2>
 
