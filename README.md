@@ -67,8 +67,12 @@ or [download](https://github.com/FastGap/fastgap/archive/master.zip) zip project
 
 5 - code you project in /src/
 
+<h2>Intro</h2>
+
+[![Alt text for your video](http://img.youtube.com/vi/T-D1KVIuvjA/0.jpg)](http://www.youtube.com/watch?v=T-D1KVIuvjA)
+
 <h2>Tutorials</h2>
 
 Tutorial - screencast - português
 
-http://www.youtube.com/watch?v=GZpSuTN3ln0
+[![Alt text for your video](http://img.youtube.com/vi/GZpSuTN3ln0/0.jpg)](http://www.youtube.com/watch?v=GZpSuTN3ln0)
