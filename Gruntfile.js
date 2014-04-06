@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 			img: "<%= paths.src %>/assets/images",
 			vendor: "<%= paths.src %>/vendor",
 			pages: "<%= paths.src %>/pages",
-			fonts: "<%= paths.src %>/vendor/topcoat/font",
+			fonts: "<%= paths.src %>/vendor/topcoat/font"
 		},
 
 		// Load package.json
@@ -175,7 +175,7 @@ module.exports = function (grunt) {
 					src: "**",
 					dest: "<%= paths.dist %>/pages"
             }]
-			},
+			}
 		}
 	};
 
