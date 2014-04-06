@@ -1,0 +1,56 @@
+
+/* MENU TRANSITIONS */
+
+menu {
+
+    -webkit-transition: translate3d(0, 0, 0);
+
+    transform: translate3d(0, 0, 0);
+
+}
+
+#scroll {
+
+    transform: translate3d(0, 0, 0);
+
+    -webkit-backface-visibility: hidden;
+
+    -webkit-transition: all 0.2s ease;
+
+}
+
+
+
+.transitionApp1 {
+
+    opacity: 0;
+
+}
+
+.transitionApp2 {
+
+    -webkit-transform: translateX(100%);
+
+}
+
+.transitionApp3 {
+
+    -webkit-transform: scale(0.1);
+
+}
+
+.transitionApp4 {
+
+    -webkit-transform: rotateY(180deg);
+
+    opacity: 0;
+
+}
+
+.transitionApp5 {
+
+    opacity: 0;
+
+    -webkit-transform: rotateX(180deg);
+
+}

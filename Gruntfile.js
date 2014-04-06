@@ -25,7 +25,7 @@ module.exports = function (grunt) {
 			fonts: "<%= paths.src %>/vendor/topcoat/font",
 		},
 
-		// Load package.jsom
+		// Load package.json
 		pkg: grunt.file.readJSON("package.json"),
 
 		// Metadata
@@ -90,17 +90,17 @@ module.exports = function (grunt) {
 		},
 
 		// Compass for SCSS
-		/*compass: {
-            dist: {
-                options: {
-                    force: true,
-                    sassDir: "<%= dirs.sass %>",
-                    cssDir: "<%= dirs.css %>",
-                    banner: "<%= banner %>",
-                    specify: "<%= dirs.sass %>/*.scss"
-                }
+		compass: {
+        dist: {
+            options: {
+                force: true,
+                sassDir: "<%= dirs.sass %>",
+                cssDir: "<%= dirs.css %>",
+                banner: "<%= banner %>",
+                specify: "<%= dirs.sass %>/*.scss"
             }
-        },*/
+        }
+    },
 
 		// Notificações
 		notify: {
@@ -184,11 +184,15 @@ module.exports = function (grunt) {
 	grunt.initConfig(appConfig);
 
 
+
+
 	// Tasks
 	// --------------------------
 
-	// Default task
+  // Watch Task
+  grunt.registerTask('w', ['watch']);
 
+	// Default task
 	grunt.registerTask('dist', ['copy']);
 	grunt.registerTask('build', ['dist']);
 	grunt.registerTask('default', ['dist']);

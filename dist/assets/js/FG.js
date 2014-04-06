@@ -52,10 +52,10 @@
 	//set fastgap listeners
 	FG.addEventListeners = function () {
 		//orientation change event
-		//window.addEventListener("orientationchange", function () {
+		window.addEventListener("orientationchange", function () {
 			//scroll - CSS CALC() NOT WORKS IN ANDROID < 4.3 AND IOS 6.0 < 
-		//	$("#scroll").height(window.innerHeight - FG.$headerApp.height());
-		//}, false);
+			$("#scroll").height(window.innerHeight - FG.$headerApp.height());
+		}, false);
 
 		//load internal pages
 		$("#page").on('click', '.botoes-app', Navigator.loadPage);
@@ -72,7 +72,7 @@
 		});
 
 		//scroll - CSS CALC() NOT WORKS IN ANDROID < 4.3 AND IOS 6.0 < 
-		//$("#scroll").height(window.innerHeight - FG.$headerApp.height());
+		$("#scroll").height(window.innerHeight - FG.$headerApp.height());
 
 	};
 })(window);

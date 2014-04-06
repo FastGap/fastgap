@@ -1,91 +1,13 @@
-/* FASTGAP https://github.com/GustavoCostaW/FastGap */
 
-*:not(input):not(textarea) {
-	-webkit-user-select: none;
-	-webkit-touch-callout: none;
-}
-html,
-body {
-	background: white;
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	-webkit-text-size-adjust: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	-webkit-tap-highlight-color: transparent;
-}
-input,
-textarea {
-	user-select: text;
-}
-body {
-	background: #f4f4f4;
-}
-/* APP LOGO IMG */
+/*
+ * -------------------------------------------------------
+ * Project: fastgap
+ * Version: 0.0.3
+ *
+ *
+ * Copyright (c) 2014 Gustavo Costa
+ * -------------------------------------------------------
+ */
 
-header#header-app {
-	width: 100%;
-	height: 85px;
-	text-align: center;
-	background: #ab0207 url('../images/fastgap_logo.jpg') no-repeat center;
-	top: 0;
-}
-/* BOX LOAD PAGES */
 
-/* SCROLL */
-
-.overthrow-enabled .overthrow {
-	overflow-y: auto;
-	overflow-x: hidden;
-	-webkit-overflow-scrolling: touch;
-}
-#page {
-	width: 100%;
-	height: 100%;
-	-webkit-transition: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-	overflow: hidden;
-}
-.overthrow-enabled #scroll {
-	background: #f4f4f4;
-	height:84%;
-}
-#content {
-	overflow: hidden;
-}
-#content,
-#page,
-#scroll {
-	-webkit-overflow-scrolling: touch;
-}
-/* MENU BUTTON */
-
-#menu-button {
-	top: 5px;
-	left: 3px;
-	position: absolute;
-	z-index: 999;
-	display: block;
-	width: 80px;
-	color: white;
-	height: 70px;
-	text-decoration: none;
-	text-align: center;
-	line-height: 37px;
-	background: #345365;
-	background: url('../images/back.png') no-repeat center;
-}
-/* MENU APP */
-
-menu {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 180px;
-	height: 100%;
-	border-right: 1px solid #ccc;
-}
-#menu-content {
-	height: 100%;
-	position: relative;
-}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}menu{-webkit-transition:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}#scroll{transform:translate3d(0, 0, 0);-webkit-backface-visibility:hidden;-webkit-transition:all 0.2s ease}.transitionApp1{opacity:0}.transitionApp2{-webkit-transform:translateX(100%)}.transitionApp3{-webkit-transform:scale(0.1)}.transitionApp4{-webkit-transform:rotateY(180deg);opacity:0}.transitionApp5{opacity:0;-webkit-transform:rotateX(180deg)}*:not(input):not(textarea){-webkit-user-select:none;-webkit-touch-callout:none}html,body{background:white;width:100%;overflow:hidden;position:relative;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent}input,textarea{user-select:text}body{background:#f4f4f4}header#header-app{width:100%;height:60px;text-align:center;background:#ab0207 url("../images/fastgap_logo.jpg") no-repeat center;top:0}.overthrow-enabled .overthrow{overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}#page{width:100%;height:100%;-webkit-transition:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);overflow:hidden}.overthrow-enabled #scroll{background:#f4f4f4}#content{overflow:hidden}#content,#page,#scroll{-webkit-overflow-scrolling:touch}#menu-button{top:5px;left:3px;position:absolute;z-index:999;display:block;width:80px;color:white;height:50px;text-decoration:none;text-align:center;line-height:37px;background:#345365;background:url("../images/back.png") no-repeat center}menu{position:absolute;top:0;left:0;width:180px;height:100%;border-right:1px solid #ccc}#menu-content{height:100%;position:relative}

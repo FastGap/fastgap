@@ -2,12 +2,31 @@
 
 /* CUSTOMIZE YOUR APP */
 
-#internal-page {
+#menu ul li {
+	color: #A02615;
+	font-weight: bold;
+}
+#scroll {
 	padding: 10px;
+	box-sizing: border-box;
+}
+#content {
+	background: white;
+	color: #A02615;
+}
+#content a {
+	font-weight: bold;
+	color: #A02615;
+	font-size: 13px;
+}
+.title-page {
+	font-size: 30px;
+	color: #A02615;
+	font-weight: bold;
 	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
 }
 .page-item {
-	overflow: hidden;
 	margin-top: 20px;
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 15px;
@@ -20,6 +39,9 @@
 	margin-left: 10px;
 	margin-top: 10px;
 }
+#internal-page {
+	width: 100%;
+}
 #internal-page h1 {
 	font: 5px"Source Sans", helvetica, arial, sans-serif;
 	width: 100%;
@@ -28,6 +50,17 @@
 }
 .page-item p {
 	margin-top: 10px;
-	text-align: right;
+	text-align: center;
 	font-size: 16px;
+}
+.developers {
+	margin-top: 10px;
+	text-align: center;
+}
+.developers img {
+	border-radius: 60px;
+}
+.developers div {
+	display: inline-block;
+	padding: 5px;
 }
