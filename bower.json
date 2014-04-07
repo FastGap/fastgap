@@ -8,11 +8,12 @@
     "Daniel Torres <danielfeelfine@gmail.com>",
     "Ivan Santos <pragmaticivan@gmail.com>"
   ],
-    "description": "Faster PhoneGap Template",
-    "keywords": [
+  "description": "Faster PhoneGap Template",
+  "keywords": [
+    "fastgap",
+    "mobile",
     "phonegap",
-    "template",
-    "mobile"
+    "template"
   ],
     "license": "MIT",
     "ignore": [
