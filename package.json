@@ -1,6 +1,6 @@
 {
 	"name": "fastgap",
-	"version": "0.0.3",
+	"version": "0.0.23",
 	"description": "FastGap is a template created by Brazilians to start developing native apps for smartphones using PhoneGap.",
 	"private": true,
 	"repository": {
