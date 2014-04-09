@@ -197,7 +197,7 @@ module.exports = function (grunt) {
         gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d' // options to use with '$ git describe'
       }
     }
-		
+
 	};
 
 
@@ -210,6 +210,9 @@ module.exports = function (grunt) {
 	// Tasks
 	// --------------------------
 
+	// Use grunt-bump for changing version number
+  grunt.loadNpmTasks('grunt-bump');
+	
   // Watch Task
   grunt.registerTask('w', ['watch']);
 
