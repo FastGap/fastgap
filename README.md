@@ -18,6 +18,9 @@ http://topcoat.io
 Snap.JS
 https://github.com/jakiestfu/Snap.js/
 
+## Contributing
+See the [guidelines for contributing](https://github.com/FastGap/fastgap/blob/master/CONTRIBUTING.md).
+
 
 ##Usage
 
@@ -43,23 +46,23 @@ https://github.com/jakiestfu/Snap.js/
 #### Clone
 
     git clone https://github.com/FastGap/fastgap.git
-    
+
 or [download](https://github.com/FastGap/fastgap/archive/master.zip) zip project
 
 #### Install npm packages
 
 1 - open src folder in terminal
-    
+
 2 - install grunt
     [sudo] npm install grunt-cli -g
-	
+
 3 - install bower
 
 ```[sudo] npm install bower -g```
 
-4 - install npm dependencies 
+4 - install npm dependencies
 
-    [sudo] npm install 
+    [sudo] npm install
 
 4 - install bower components
 
