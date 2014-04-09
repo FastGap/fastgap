@@ -176,7 +176,28 @@ module.exports = function (grunt) {
 					dest: "<%= paths.dist %>/pages"
             }]
 			}
-		}
+		},
+
+		/************************************
+     * grunt-bump
+     * Bump package version, create tag, commit, push...
+     ************************************/
+    bump: {
+      options: {
+        files: ['package.json', 'bower.json'],
+        updateConfigs: [],
+        commit: true,
+        commitMessage: '%VERSION%',
+        commitFiles: ['package.json', 'bower.json', 'dist/'], // '-a' for all files
+        createTag: true,
+        tagName: '%VERSION%',
+        tagMessage: '%VERSION%',
+        push: true,
+        pushTo: 'master',
+        gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d' // options to use with '$ git describe'
+      }
+    }
+		
 	};
 
 
