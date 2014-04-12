@@ -19,12 +19,25 @@
 			// prevent memory leaks
 			FG.currentController.destroy();
 		}
+		
+		
+		
+		
+		
 
-		// add content in #page
+//******************modificacao para chamar os controlers****************//		
 		FG.$contentLoad.html(content);
+		FG.currentController = new this[Navigator.controlers]();		
 
 
-		// create new controller
+
+//*****************************cancelado abaixo*****************************************//			
+		
+		
+		
+		//alert(content);
+		/* // add content in #page
+		create new controller
 		switch (Navigator.currentPage) {
 		case 'home.html':
 			FG.currentController = new HomeController();
@@ -48,6 +61,7 @@
 			alert('No controller found.');
 			break;
 		}
+		*/
 
 		// once new controller created, initialize it
 		if (FG.currentController != null) {
