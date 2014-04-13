@@ -22,7 +22,7 @@
 		//prevent bug call transitionend
 		setTimeout(function () {
 			Transition.control = true;
-			Navigator.loadPage('home.html');
+			Navigator.loadPage('home.html','HomeController');
 		}, 10);
 		//});
 	};
