@@ -248,6 +248,8 @@ module.exports = function (grunt) {
 
   // Dist JS
   grunt.registerTask('dist-js', ['concat']);
+  // Dist CSS
+  grunt.registerTask('dist-css', ['sass']);
 
   // Watch Task
   grunt.registerTask('w', ['watch']);
