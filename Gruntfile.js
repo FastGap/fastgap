@@ -21,7 +21,6 @@ module.exports = function (grunt) {
 
     // Assets directory
     dirs: {
-      js: "<%= paths.src %>/js",
       sass: "<%= paths.src %>/assets/scss",
       css: "<%= paths.src %>/assets/css",
       img: "<%= paths.src %>/assets/images",
@@ -82,14 +81,14 @@ module.exports = function (grunt) {
       fastgapControllers: {
         src: [
           // Main
-          '<%= dirs.js %>/controllers/AppController.js',
-          '<%= dirs.js %>/controllers/HomeController.js',
+          '<%= paths.src %>/js/controllers/AppController.js',
+          '<%= paths.src %>/js/controllers/HomeController.js',
           // Custom
-          '<%= dirs.js %>/controllers/Page1Controller.js',
-          '<%= dirs.js %>/controllers/Page2Controller.js',
-          '<%= dirs.js %>/controllers/Page3Controller.js',
-          '<%= dirs.js %>/controllers/Page4Controller.js',
-          '<%= dirs.js %>/controllers/Page5Controller.js'
+          '<%= paths.src %>/js/controllers/Page1Controller.js',
+          '<%= paths.src %>/js/controllers/Page2Controller.js',
+          '<%= paths.src %>/js/controllers/Page3Controller.js',
+          '<%= paths.src %>/js/controllers/Page4Controller.js',
+          '<%= paths.src %>/js/controllers/Page5Controller.js'
         ],
         dest: '<%= paths.dist %>/js/fastgap.controllers.js'
       },
@@ -108,12 +107,12 @@ module.exports = function (grunt) {
       fastgapCore: {
         src: [
           // Main
-          '<%= dirs.js %>/History.js',
-          '<%= dirs.js %>/FG.js',
-          '<%= dirs.js %>/Navigator.js',
-          '<%= dirs.js %>/Transition.js',
-          '<%= dirs.js %>/PageLoad.js',
-          '<%= dirs.js %>/index.js'
+          '<%= paths.src %>/js/History.js',
+          '<%= paths.src %>/js/FG.js',
+          '<%= paths.src %>/js/Navigator.js',
+          '<%= paths.src %>/js/Transition.js',
+          '<%= paths.src %>/js/PageLoad.js',
+          '<%= paths.src %>/js/index.js'
         ],
         dest: '<%= paths.dist %>/js/fastgap.core.js'
       }
