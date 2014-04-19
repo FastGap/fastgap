@@ -9,8 +9,6 @@ var buildConfig = require('./config/build');
 module.exports = function (grunt) {
   "use strict";
 
-  require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
-
   var appConfig = {
 
     // Default Paths
@@ -212,6 +210,9 @@ module.exports = function (grunt) {
 
   // Tasks
   // --------------------------
+
+  // load all grunt tasks matching the `grunt-*` pattern
+  require('load-grunt-tasks')(grunt);
 
   // Use grunt-bump for changing version number
   grunt.loadNpmTasks('grunt-bump');
