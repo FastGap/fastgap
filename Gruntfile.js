@@ -91,7 +91,7 @@ module.exports = function (grunt) {
           '<%= dirs.js %>/controllers/Page4Controller.js',
           '<%= dirs.js %>/controllers/Page5Controller.js'
         ],
-        dest: 'dist/js/fastgap.controllers.js'
+        dest: '<%= paths.dist %>/js/fastgap.controllers.js'
       },
       librariesJs: {
         src: [
@@ -103,7 +103,7 @@ module.exports = function (grunt) {
           // Snap.js (menu)
           '<%= paths.bower %>/snapjs/snapjs.js'
         ],
-        dest: 'dist/js/fastgap.libs.js'
+        dest: '<%= paths.dist %>/js/fastgap.libs.js'
       },
       fastgapCore: {
         src: [
@@ -115,7 +115,7 @@ module.exports = function (grunt) {
           '<%= dirs.js %>/PageLoad.js',
           '<%= dirs.js %>/index.js'
         ],
-        dest: 'dist/js/fastgap.core.js'
+        dest: '<%= paths.dist %>/js/fastgap.core.js'
       }
     },
 
