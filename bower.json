@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "fastclick": "~0.6.11",
-    "overthrow": "~0.7.0",
+    "overthrow-dist": "~0.7.0",
     "zepto": "~1.1.3",
     "topcoat": "~0.8.0",
     "snapjs": "*"
