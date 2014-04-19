@@ -94,7 +94,7 @@ module.exports = function (grunt) {
      * Concatenate files
      ************************************/
     concat: {
-      fastgapControllers: {
+      controllers: {
         src: [
           // Main
           '<%= paths.src %>/js/controllers/AppController.js',
@@ -108,7 +108,7 @@ module.exports = function (grunt) {
         ],
         dest: '<%= paths.dist %>/js/fastgap.controllers.js'
       },
-      librariesJs: {
+      libraries: {
         src: [
           // Main
           '<%= paths.bower %>/zepto/zepto.js',
@@ -120,7 +120,7 @@ module.exports = function (grunt) {
         ],
         dest: '<%= paths.dist %>/js/fastgap.libs.js'
       },
-      fastgapCore: {
+      core: {
         src: [
           // Main
           '<%= paths.src %>/js/History.js',
