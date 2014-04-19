@@ -187,6 +187,18 @@ module.exports = function (grunt) {
         cwd: '<%= paths.bower %>/topcoat/font',
         src: ['*.otf'],
         dest: '<%= paths.dist %>/fonts'
+      },
+      snapToDemo: {
+        expand: true,
+        cwd: '<%= paths.bower %>/snapjs',
+        src: ['snap.css'],
+        dest: 'demo/assets/css'
+      },
+      topcoatToDemo: {
+        expand: true,
+        cwd: '<%= paths.bower %>/topcoat/css',
+        src: ['topcoat-mobile-light.min.css'],
+        dest: 'demo/assets/css'
       }
     },
 
