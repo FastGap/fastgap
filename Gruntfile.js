@@ -179,14 +179,6 @@ module.exports = function (grunt) {
           src: '*.otf',
           dest: '<%= paths.dist %>/fonts'
         }]
-      },
-      distCss: {
-        files: [{
-          expand: true,
-          cwd: "<%= dirs.css %>/",
-          src: buildConfig.cssFiles,
-          dest: "<%= paths.dist %>/assets/css"
-        }]
       }
     },
 
