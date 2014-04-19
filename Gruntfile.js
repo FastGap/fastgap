@@ -142,34 +142,16 @@ module.exports = function (grunt) {
       }
     },
 
-    // Minification
+    /************************************
+     * grunt-contrib-uglify
+     * Minify files
+     ************************************/
     uglify: {
-      options: {
-        mangle: false,
-        banner: "<%= banner %>"
+      js: {
+        src: '<%= paths.dist %>/js/fastgap.js',
+        dest: '<%= paths.dist %>/js/fastgap.min.js'
       }
-          // ,
-          // dist: {
-          //     files: {
-          //         "<%= dirs.js %>/main.min.js": [
-          //         "<%= dirs.js %>/main.js"
-          //         ]
-          //     }
-          // }
     },
-
-      // Compass for SCSS
-      /*compass: {
-      dist: {
-          options: {
-              force: true,
-              sassDir: "<%= dirs.sass %>",
-              cssDir: "<%= dirs.css %>",
-              banner: "<%= banner %>",
-              specify: "<%= dirs.sass %>/*.scss"
-          }
-      }
-  },*/
 
     // Notificações
     notify: {
