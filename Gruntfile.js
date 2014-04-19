@@ -41,6 +41,14 @@ module.exports = function (grunt) {
             ' */\n',
 
     /************************************
+     * grunt-contrib-clean
+     * Clean files and folders
+     ************************************/
+    clean: {
+      dist: 'dist/{css,js}'
+    },
+
+    /************************************
      * grunt-sass
      * Compile SCSS to CSS using node-sass
      ************************************/
