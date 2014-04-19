@@ -180,14 +180,6 @@ module.exports = function (grunt) {
           dest: '<%= paths.dist %>/fonts'
         }]
       },
-      distHtml: {
-        files: [{
-          expand: true,
-          cwd: "<%= paths.src %>/",
-          src: buildConfig.htmlFiles,
-          dest: "<%= paths.dist %>/"
-        }]
-      },
       distCss: {
         files: [{
           expand: true,
