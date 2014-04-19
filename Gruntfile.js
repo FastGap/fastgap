@@ -45,7 +45,7 @@ module.exports = function (grunt) {
      * Compile SCSS to CSS using node-sass
      ************************************/
     sass: {
-      dist: {
+      development: {
         options: {
           includePaths: ['<%= paths.src %>/scss/base/'],
           outputStyle: 'nested'
@@ -53,6 +53,16 @@ module.exports = function (grunt) {
         files: {
           '<%= paths.dist %>/css/fastgap.css': '<%= paths.src %>/scss/fastgap.scss',
           '<%= paths.dist %>/css/style.css': '<%= paths.src %>/scss/style.scss'
+        }
+      },
+      production: {
+        options: {
+          includePaths: ['<%= paths.src %>/scss/base/'],
+          outputStyle: 'compressed'
+        },
+        files: {
+          '<%= paths.dist %>/css/fastgap.min.css': '<%= paths.src %>/scss/fastgap.scss',
+          '<%= paths.dist %>/css/style..min.css': '<%= paths.src %>/scss/style.scss'
         }
       }
     },
