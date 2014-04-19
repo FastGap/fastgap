@@ -34,10 +34,10 @@ module.exports = function (grunt) {
     // Banner
     banner: '/*!\n' +
             " * FastGap v<%= pkg.version %> (<%= pkg.homepage %>)\n" +
-            " * Author: <%= pkg.author %>\n" +
-            " * Maintainers: <%= pkg.maintainers %>\n" +
+            " * Author: <%= pkg.author.name %>\n" +
+            " * Maintainers: https://github.com/orgs/FastGap/members\n" +
             " * Copyright (c) <%= grunt.template.today(\"yyyy\") %>\n" +
-            ' * Licensed under <%= pkg.licenses.type %>\n' +
+            ' * Licensed under <%= pkg.license %>\n' +
             ' */\n',
 
     /************************************
