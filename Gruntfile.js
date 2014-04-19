@@ -104,6 +104,18 @@ module.exports = function (grunt) {
           '<%= paths.bower %>/snapjs/snapjs.js'
         ],
         dest: 'dist/js/fastgap.libs.js'
+      },
+      fastgapCore: {
+        src: [
+          // Main
+          '<%= dirs.js %>/History.js',
+          '<%= dirs.js %>/FG.js',
+          '<%= dirs.js %>/Navigator.js',
+          '<%= dirs.js %>/Transition.js',
+          '<%= dirs.js %>/PageLoad.js',
+          '<%= dirs.js %>/index.js'
+        ],
+        dest: 'dist/js/fastgap.core.js'
       }
     },
 
