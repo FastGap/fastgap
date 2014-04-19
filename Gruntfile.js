@@ -207,9 +207,6 @@ module.exports = function (grunt) {
   // load all grunt tasks matching the `grunt-*` pattern
   require('load-grunt-tasks')(grunt);
 
-  // Use grunt-bump for changing version number
-  grunt.loadNpmTasks('grunt-bump');
-
   // Watch Task
   grunt.registerTask('w', ['watch']);
 
