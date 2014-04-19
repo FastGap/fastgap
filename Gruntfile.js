@@ -1,3 +1,9 @@
+/*!
+ * FastGap's Gruntfile
+ * http://fastgap.mobi/
+ * Licensed under MIT
+ */
+
 "use strict";
 
 var buildConfig = require('./config/build');
