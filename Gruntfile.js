@@ -179,6 +179,20 @@ module.exports = function (grunt) {
     },
 
     /************************************
+     * grunt-banner
+     * Adds a simple banner to files
+     ************************************/
+    usebanner: {
+      options: {
+        position: 'top',
+        banner: '<%= banner %>'
+      },
+      files: {
+        src: '<%= paths.dist %>/{css,js}/{*.css,*.js}'
+      }
+    },
+
+    /************************************
      * grunt-bump
      * Bump package version, create tag, commit, push...
      ************************************/
