@@ -187,15 +187,7 @@ module.exports = function (grunt) {
           src: buildConfig.cssFiles,
           dest: "<%= paths.dist %>/assets/css"
         }]
-      },
-      distImages: {
-        files: [{
-          expand: true,
-          cwd: "<%= dirs.img %>/",
-          src: "**",
-          dest: "<%= paths.dist %>/assets/images"
-        }]
-      },
+      }
       distPages: {
         files: [{
           expand: true,
