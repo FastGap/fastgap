@@ -202,6 +202,12 @@ module.exports = function (grunt) {
         src: ['*.otf'],
         dest: 'demo/assets/font'
       },
+      fastgapJs: {
+        expand: true,
+        cwd: '<%= paths.dist %>/js',
+        src: ['*.js'],
+        dest: 'demo/assets/js'
+      },
       snapCSS: {
         expand: true,
         cwd: '<%= paths.bower %>/snapjs',
