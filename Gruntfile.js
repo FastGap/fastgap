@@ -51,8 +51,7 @@ module.exports = function (grunt) {
           outputStyle: 'nested'
         },
         files: {
-          '<%= paths.dist %>/css/fastgap.css': '<%= paths.src %>/scss/fastgap.scss',
-          '<%= paths.dist %>/css/style.css': '<%= paths.src %>/scss/style.scss'
+          '<%= paths.dist %>/css/fastgap.css': '<%= paths.src %>/scss/build.scss'
         }
       },
       production: {
@@ -61,8 +60,7 @@ module.exports = function (grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          '<%= paths.dist %>/css/fastgap.min.css': '<%= paths.src %>/scss/fastgap.scss',
-          '<%= paths.dist %>/css/style..min.css': '<%= paths.src %>/scss/style.scss'
+          '<%= paths.dist %>/css/fastgap.min.css': '<%= paths.src %>/scss/build.scss'
         }
       }
     },
