@@ -32,18 +32,14 @@ module.exports = function (grunt) {
     // Load package.json
     pkg: grunt.file.readJSON("package.json"),
 
-    // Metadata
-    banner: "\n" +
-      "/*\n" +
-      " * -------------------------------------------------------\n" +
-      " * Project: <%= pkg.name %>\n" +
-      " * Version: <%= pkg.version %>\n" +
-      " *\n" +
-      " *\n" +
-      " * Copyright (c) <%= grunt.template.today(\"yyyy\") %> <%= pkg.author.name %>\n" +
-      " * -------------------------------------------------------\n" +
-      " */\n" +
-      "\n",
+    // Banner
+    banner: '/*!\n' +
+            " * FastGap v<%= pkg.version %> (<%= pkg.homepage %>)\n" +
+            " * Author: <%= pkg.author %>\n" +
+            " * Maintainers: <%= pkg.maintainers %>\n" +
+            " * Copyright (c) <%= grunt.template.today(\"yyyy\") %>\n" +
+            ' * Licensed under <%= pkg.licenses.type %>\n' +
+            ' */\n',
 
     // Watch files
     watch: {
