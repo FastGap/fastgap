@@ -175,9 +175,9 @@ module.exports = function (grunt) {
       distFonts: {
         files: [{
           expand: true,
-          cwd: "<%= dirs.fonts %>",
-          src: "**",
-          dest: "<%= paths.dist %>/vendor/topcoat/font"
+          cwd: '<%= paths.bower %>/topcoat/font',
+          src: '*.otf',
+          dest: '<%= paths.dist %>/fonts'
         }]
       },
       distHtml: {
