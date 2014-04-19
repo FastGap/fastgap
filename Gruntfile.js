@@ -247,7 +247,7 @@ module.exports = function (grunt) {
   grunt.registerTask('w', ['watch']);
 
   // Default task
-  grunt.registerTask('dist', ['copy']);
+  grunt.registerTask('dist', ['dist-js', 'dist-css']);
   grunt.registerTask('build', ['dist']);
   grunt.registerTask('default', ['dist']);
 
