@@ -19,11 +19,7 @@
     "email": "gustavo.costa.w@gmail.com",
     "url": "https://github.com/GustavoCostaW"
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
+  "license": "MIT",
   "maintainers": [
     {
       "name": "Gustavo Costa",
