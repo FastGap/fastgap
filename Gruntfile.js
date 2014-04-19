@@ -74,6 +74,25 @@ module.exports = function (grunt) {
       ]
     },
 
+    /************************************
+     * grunt-contrib-concat
+     * Concatenate files
+     ************************************/
+    concat: {
+      librariesJs: {
+        src: [
+          // Main
+          '<%= paths.bower %>/zepto/zepto.js',
+          '<%= paths.bower %>/fastclick/lib/fastclick.js',
+          // Scroll
+          '<%= paths.bower %>/overthrow-dist/overthrow.js',
+          // Snap.js (menu)
+          '<%= paths.bower %>/snapjs/snapjs.js'
+        ],
+        dest: 'dist/js/fastgap.libs.js'
+      }
+    },
+
     // Minification
     uglify: {
       options: {
@@ -221,6 +240,9 @@ module.exports = function (grunt) {
 
   // load all grunt tasks matching the `grunt-*` pattern
   require('load-grunt-tasks')(grunt);
+
+  // Dist JS
+  grunt.registerTask('dist-js', ['concat']);
 
   // Watch Task
   grunt.registerTask('w', ['watch']);
