@@ -229,7 +229,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Dist JS
-  grunt.registerTask('dist-js', ['concat']);
+  grunt.registerTask('dist-js', ['concat', 'uglify']);
   // Dist CSS
   grunt.registerTask('dist-css', ['sass']);
 
