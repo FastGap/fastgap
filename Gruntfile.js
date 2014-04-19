@@ -40,6 +40,19 @@ module.exports = function (grunt) {
             ' * Licensed under <%= pkg.licenses.type %>\n' +
             ' */\n',
 
+    sass: {
+      dist: {
+        options: {
+          includePaths: ['<%= paths.src %>/scss/base/'],
+          outputStyle: 'nested'
+        },
+        files: {
+          '<%= paths.dist %>/css/fastgap.css': '<%= paths.src %>/scss/fastgap.scss',
+          '<%= paths.dist %>/css/style.css': '<%= paths.src %>/scss/style.scss'
+        }
+      }
+    },
+
     // Watch files
     watch: {
       options: {
