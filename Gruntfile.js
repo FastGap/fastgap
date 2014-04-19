@@ -170,15 +170,16 @@ module.exports = function (grunt) {
       }
     },
 
+    /************************************
+     * grunt-contrib-copy
+     * Copy files and folders to a specific path
+     ************************************/
     copy: {
-      /* COPY FONTS FOLDER */
-      distFonts: {
-        files: [{
-          expand: true,
-          cwd: '<%= paths.bower %>/topcoat/font',
-          src: '*.otf',
-          dest: '<%= paths.dist %>/fonts'
-        }]
+      fonts: {
+        expand: true,
+        cwd: '<%= paths.bower %>/topcoat/font',
+        src: ['*.otf'],
+        dest: '<%= paths.dist %>/fonts'
       }
     },
 
