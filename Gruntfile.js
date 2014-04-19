@@ -199,6 +199,12 @@ module.exports = function (grunt) {
         cwd: '<%= paths.bower %>/topcoat/css',
         src: ['topcoat-mobile-light.min.css'],
         dest: 'demo/assets/css'
+      },
+      fastgapToDemo: {
+        expand: true,
+        cwd: '<%= paths.dist %>/css',
+        src: ['fastgap.min.css'],
+        dest: 'demo/assets/css'
       }
     },
 
