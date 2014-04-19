@@ -15,7 +15,8 @@ module.exports = function (grunt) {
     // Default Paths
     paths: {
       src: "src",
-      dist: "dist"
+      dist: "dist",
+      bower: "bower_components"
     },
 
     // Assets directory
