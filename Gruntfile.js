@@ -21,7 +21,7 @@ module.exports = function (grunt) {
 
     // Assets directory
     dirs: {
-      js: "<%= paths.src %>/assets/js",
+      js: "<%= paths.src %>/js",
       sass: "<%= paths.src %>/assets/scss",
       css: "<%= paths.src %>/assets/css",
       img: "<%= paths.src %>/assets/images",
