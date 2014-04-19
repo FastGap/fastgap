@@ -38,7 +38,12 @@
 			"name": "Mayron Cachina",
 			"email": "mayroncachina@gmail.com",
 			"url": "https://github.com/mayroncachina"
-    }
+		},
+		{
+			"name": "Daniel Torres",
+			"email": "danielfeelfine@gmail.com",
+			"url": "https://github.com/danielfeelfine"
+		}
   ],
 	"bugs": {
 		"url": "https://github.com/FastGap/fastgap/issues"
