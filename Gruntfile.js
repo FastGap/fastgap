@@ -10,7 +10,7 @@ module.exports = function (grunt) {
   "use strict";
 
   var appConfig = {
-    
+
     // Default Paths
     paths: {
       src: 'src',
@@ -114,6 +114,14 @@ module.exports = function (grunt) {
           '<%= paths.src %>/js/index.js'
         ],
         dest: '<%= paths.dist %>/js/fastgap.core.js'
+      },
+      fastgap: {
+        src: [
+          '<%= paths.dist %>/js/fastgap.controllers.js',
+          '<%= paths.dist %>/js/fastgap.libs.js',
+          '<%= paths.dist %>/js/fastgap.core.js'
+        ],
+        dest: '<%= paths.dist %>/js/fastgap.js'
       }
     },
 
