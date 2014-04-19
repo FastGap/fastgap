@@ -40,6 +40,10 @@ module.exports = function (grunt) {
             ' * Licensed under <%= pkg.licenses.type %>\n' +
             ' */\n',
 
+    /************************************
+     * grunt-sass
+     * Compile SCSS to CSS using node-sass
+     ************************************/
     sass: {
       dist: {
         options: {
