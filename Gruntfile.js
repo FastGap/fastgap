@@ -124,7 +124,7 @@ module.exports = function (grunt) {
           // Scroll
           '<%= paths.bower %>/overthrow-dist/overthrow.js',
           // Snap.js (menu)
-          '<%= paths.bower %>/snapjs/snapjs.js'
+          '<%= paths.bower %>/snapjs/snap.js'
         ],
         dest: '<%= paths.dist %>/js/fastgap.libs.js'
       },
