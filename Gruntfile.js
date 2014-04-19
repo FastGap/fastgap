@@ -4,8 +4,6 @@
  * Licensed under MIT
  */
 
-var buildConfig = require('./config/build');
-
 module.exports = function (grunt) {
   "use strict";
 
