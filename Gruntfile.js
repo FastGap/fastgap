@@ -188,14 +188,6 @@ module.exports = function (grunt) {
           dest: "<%= paths.dist %>/assets/css"
         }]
       }
-      distPages: {
-        files: [{
-          expand: true,
-          cwd: "<%= dirs.pages %>/",
-          src: "**",
-          dest: "<%= paths.dist %>/pages"
-      }]
-      }
     },
 
     /************************************
