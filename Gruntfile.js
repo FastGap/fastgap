@@ -9,7 +9,8 @@ var buildConfig = require('./config/build');
 module.exports = function (grunt) {
   "use strict";
 
-  var appConfig = {
+  // Project configuration
+  grunt.initConfig({
 
     // Default Paths
     paths: {
@@ -202,10 +203,6 @@ module.exports = function (grunt) {
     }
 
   };
-
-
-  // Init grunt configurations
-  grunt.initConfig(appConfig);
 
 
   // Tasks
