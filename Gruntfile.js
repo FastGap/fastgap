@@ -79,6 +79,20 @@ module.exports = function (grunt) {
      * Concatenate files
      ************************************/
     concat: {
+      fastgapControllers: {
+        src: [
+          // Main
+          '<%= dirs.js %>/controllers/AppController.js',
+          '<%= dirs.js %>/controllers/HomeController.js',
+          // Custom
+          '<%= dirs.js %>/controllers/Page1Controller.js',
+          '<%= dirs.js %>/controllers/Page2Controller.js',
+          '<%= dirs.js %>/controllers/Page3Controller.js',
+          '<%= dirs.js %>/controllers/Page4Controller.js',
+          '<%= dirs.js %>/controllers/Page5Controller.js'
+        ],
+        dest: 'dist/js/fastgap.controllers.js'
+      },
       librariesJs: {
         src: [
           // Main
