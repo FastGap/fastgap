@@ -180,14 +180,6 @@ module.exports = function (grunt) {
           dest: "<%= paths.dist %>/vendor/topcoat/font"
         }]
       },
-      distVendor: {
-        files: [{
-          expand: true,
-          cwd: "<%= dirs.vendor %>/",
-          src: buildConfig.vendorFiles,
-          dest: "<%= paths.dist %>/vendor/"
-        }]
-      },
       distHtml: {
         files: [{
           expand: true,
