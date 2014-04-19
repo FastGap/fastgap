@@ -9,14 +9,13 @@ var buildConfig = require('./config/build');
 module.exports = function (grunt) {
   "use strict";
 
-  // Project configuration
-  grunt.initConfig({
-
+  var appConfig = {
+    
     // Default Paths
     paths: {
-      src: "src",
-      dist: "dist",
-      bower: "bower_components"
+      src: 'src',
+      dist: 'dist',
+      bower: 'bower_components'
     },
 
     // Assets directory
@@ -258,6 +257,9 @@ module.exports = function (grunt) {
     }
 
   };
+
+  // Init grunt configurations
+  grunt.initConfig(appConfig);
 
 
   // Tasks
