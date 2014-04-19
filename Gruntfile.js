@@ -188,19 +188,19 @@ module.exports = function (grunt) {
         src: ['*.otf'],
         dest: '<%= paths.dist %>/fonts'
       },
-      snapToDemo: {
+      snapCSS: {
         expand: true,
         cwd: '<%= paths.bower %>/snapjs',
         src: ['snap.css'],
         dest: 'demo/assets/css'
       },
-      topcoatToDemo: {
+      topcoatCSS: {
         expand: true,
         cwd: '<%= paths.bower %>/topcoat/css',
         src: ['topcoat-mobile-light.min.css'],
         dest: 'demo/assets/css'
       },
-      fastgapToDemo: {
+      fastgapCSS: {
         expand: true,
         cwd: '<%= paths.dist %>/css',
         src: ['fastgap.min.css'],
