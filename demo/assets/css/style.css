@@ -1,5 +1,9 @@
 /* FASTGAP https://github.com/GustavoCostaW/FastGap */
 /* CUSTOMIZE YOUR APP */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 #menu ul li {
   color: #A02615;
   font-weight: bold; }
