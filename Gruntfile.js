@@ -206,18 +206,6 @@ module.exports = function (grunt) {
      * Copy files and folders to a specific path
      ************************************/
     copy: {
-      fontsDist: {
-        expand: true,
-        cwd: '<%= paths.bower %>/topcoat/font',
-        src: ['*.otf'],
-        dest: '<%= paths.dist %>/fonts'
-      },
-      fontsDemo: {
-        expand: true,
-        cwd: '<%= paths.bower %>/topcoat/font',
-        src: ['*.otf'],
-        dest: 'demo/assets/font'
-      },
       imagesToDemo: {
         expand: true,
         cwd: '<%= paths.dist %>/img',
