@@ -184,6 +184,24 @@ module.exports = function (grunt) {
     },
 
     /************************************
+     * grunt-contrib-imagemin
+     * Minify PNG, JPEG and GIF images
+     ************************************/
+    imagemin: {                          // Task
+      dynamic: {
+        options: {                       // Target options
+          optimizationLevel: 3
+        },                        // Another target
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: '<%= paths.src %>/',                   // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+          dest: '<%= paths.dist %>/'                  // Destination path prefix
+        }]
+      }
+    },
+
+    /************************************
      * grunt-contrib-copy
      * Copy files and folders to a specific path
      ************************************/
@@ -276,12 +294,14 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify']);
   // Dist CSS
   grunt.registerTask('dist-css', ['sass']);
+  // Dist IMG
+  grunt.registerTask('dist-img', ['imagemin']);
 
   // Watch Task
   grunt.registerTask('w', ['watch']);
 
   // Default task
-  grunt.registerTask('dist', ['clean', 'dist-js', 'dist-css', 'usebanner']);
+  grunt.registerTask('dist', ['clean', 'dist-js', 'dist-css', 'dist-img', 'usebanner']);
   grunt.registerTask('build', ['dist']);
   grunt.registerTask('default', ['dist']);
 
