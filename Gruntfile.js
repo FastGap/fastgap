@@ -284,6 +284,9 @@ module.exports = function (grunt) {
   // load all grunt tasks matching the `grunt-*` pattern
   require('load-grunt-tasks')(grunt);
 
+  // Displays the execution time of grunt tasks
+  require('time-grunt')(grunt);
+
   // Dist JS
   grunt.registerTask('dist-js', ['concat', 'uglify']);
   // Dist CSS
