@@ -65,3 +65,47 @@ body {
 .developers div {
   display: inline-block;
   padding: 5px; }
+
+/*-----------------------*/
+
+html,
+body {
+  background: white;
+}
+body {
+  background: #f4f4f4;
+}
+/* APP LOGO IMG */
+
+header#header-app {
+  height: 60px;
+  text-align: center;
+  background: #ab0207 url('../images/fastgap_logo.jpg') no-repeat center;
+}
+/* BOX LOAD PAGES */
+
+/* SCROLL */
+.overthrow-enabled #scroll {
+  background: #f4f4f4;
+}
+/* MENU BUTTON */
+
+#menu-button {
+  top: 5px;
+  left: 3px;
+  width: 80px;
+  color: white;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 37px;
+  background: #345365;
+  background: url('../images/back.png') no-repeat center;
+}
+/* MENU APP */
+
+menu {
+  width: 180px;
+  height: 100%;
+  border-right: 1px solid #ccc;
+}
