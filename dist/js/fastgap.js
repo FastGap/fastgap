@@ -1,5 +1,5 @@
 /*!
- * FastGap v0.0.41 (http://fastgap.mobi/)
+ * FastGap v0.0.43 (http://fastgap.mobi/)
  * Author: Gustavo Costa
  * Maintainers: https://github.com/orgs/FastGap/members
  * Copyright (c) 2014

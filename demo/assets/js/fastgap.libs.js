@@ -1,11 +1,3 @@
-/*!
- * FastGap v0.0.4 (http://fastgap.mobi/)
- * Author: Gustavo Costa
- * Maintainers: https://github.com/orgs/FastGap/members
- * Copyright (c) 2014
- * Licensed under MIT
- */
-
 /* Zepto v1.1.3 - zepto event ajax form ie - zeptojs.com/license */
 
 
