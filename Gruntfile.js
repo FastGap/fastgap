@@ -262,7 +262,7 @@ module.exports = function (grunt) {
         updateConfigs: [],
         commit: true,
         commitMessage: '%VERSION%',
-        commitFiles: ['package.json', 'bower.json', 'dist/'], // '-a' for all files
+        commitFiles: ['package.json', 'bower.json', 'dist/', 'demo/'], // '-a' for all files
         createTag: true,
         tagName: '%VERSION%',
         tagMessage: '%VERSION%',
