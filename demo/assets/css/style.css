@@ -80,7 +80,7 @@ body {
 header#header-app {
   height: 60px;
   text-align: center;
-  background: #ab0207 url('../images/fastgap_logo.jpg') no-repeat center;
+  background: #ab0207 url('../img/fastgap_logo.jpg') no-repeat center;
 }
 /* BOX LOAD PAGES */
 
@@ -100,7 +100,7 @@ header#header-app {
   text-align: center;
   line-height: 37px;
   background: #345365;
-  background: url('../images/back.png') no-repeat center;
+  background: url('../img/back.png') no-repeat center;
 }
 /* MENU APP */
 
