@@ -218,6 +218,12 @@ module.exports = function (grunt) {
         src: ['*.otf'],
         dest: 'demo/assets/font'
       },
+      imagesToDemo: {
+        expand: true,
+        cwd: '<%= paths.dist %>/img',
+        src: ['*.png', '*.jpg', '*.gif'],
+        dest: 'demo/assets/img'
+      },
       fastgapJs: {
         expand: true,
         cwd: '<%= paths.dist %>/js',
