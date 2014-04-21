@@ -1,3 +1,11 @@
+/*!
+ * FastGap v0.0.48 (http://fastgap.mobi/)
+ * Author: Gustavo Costa
+ * Maintainers: https://github.com/orgs/FastGap/members
+ * Copyright (c) 2014
+ * Licensed under MIT
+ */
+
 /* FASTGAP https://github.com/FastGap/FastGap 
 
 IMPORTANT, READ LIBRARY DOCS FOR BETTER CUSTOMIZATION 
