@@ -16,6 +16,15 @@
     "template"
   ],
   "license": "MIT",
+  "main": [
+    "dist/js/fastgap.controllers.css",
+    "dist/js/fastgap.libs.js",
+    "dist/js/fastgap.core.js",
+    "dist/js/fastgap.js",
+    "dist/js/fastgap.min.js",
+    "dist/css/fastgap.css",
+    "dist/css/fastgap.min.css"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
