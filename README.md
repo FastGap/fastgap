@@ -15,10 +15,6 @@
 - [**TopCoat**](http://topcoat.io)
   *"CSS for clean and fast web apps."*
 
-## Contributing
-See the [guidelines for contributing](https://github.com/FastGap/fastgap/blob/master/CONTRIBUTING.md).
-
-
 ##Usage
 
 ##For Production
@@ -66,6 +62,9 @@ or [download](https://github.com/FastGap/fastgap/archive/master.zip) zip project
 ```bower install```
 
 5 - code you project in /src/
+
+## Contributing
+See the [guidelines for contributing](https://github.com/FastGap/fastgap/blob/master/CONTRIBUTING.md).
 
 ## Changelog
 See the [Changelog](https://github.com/FastGap/fastgap/blob/master/CHANGELOG.md) for list history changes.
