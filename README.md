@@ -70,6 +70,9 @@ or [download](https://github.com/FastGap/fastgap/archive/master.zip) zip project
 
 5 - code you project in /src/
 
+## Changelog
+See the [Changelog](https://github.com/FastGap/fastgap/blob/master/CHANGELOG.md) for list history changes.
+
 <h2>Intro</h2>
 
 [![Alt text for your video](http://img.youtube.com/vi/qWncqneN5HQ/0.jpg)](http://www.youtube.com/watch?v=qWncqneN5HQ)
