@@ -2,8 +2,6 @@
 
 > Template for jump start developing native mobile apps using Phonegap.
 
-> Made with ♥ by Brazilians crazy guys.
-
 ## We use
 
 - [**Zepto.js**](http://zeptojs.com)
@@ -17,13 +15,11 @@
 
 ## How to start
 
-### Use FastGap in my App
-
 **1.** Download the latest version of **Demo pack** ([see releases](https://github.com/FastGap/fastgap/releases/download/0.0.45/FastGap-Demo-0.0.45.zip) for this).
 
 **2.** Copy ```assets/```, ```pages/``` folder and ```index.html``` file.
 
-**3**. Put the *files* and *folders* in your phonegap project.
+**3**. Put the *files* and *folders* in ```www/```path of your phonegap project and enjoy!
 
 ###### If you use with [Bower](http://bower.io/)
 
@@ -55,12 +51,15 @@ Wait for the [core team](https://github.com/orgs/FastGap/members) to evaluate an
 ## Changelog
 See the [Changelog](https://github.com/FastGap/fastgap/blob/master/CHANGELOG.md) for list history changes.
 
-<h2>Intro</h2>
+## Screencasts
 
-[![Alt text for your video](http://img.youtube.com/vi/qWncqneN5HQ/0.jpg)](http://www.youtube.com/watch?v=qWncqneN5HQ)
+#### Introduce to the FastGap development (pt-BR)
+[![Introduce to the FastGap development](http://img.youtube.com/vi/qWncqneN5HQ/0.jpg)](http://www.youtube.com/watch?v=qWncqneN5HQ)
 
-<h2>Tutorials</h2>
+#### How to begin in FastGap (pt-BR)
 
-Tutorial - screencast - português
+[![How to begin in FastGap](http://img.youtube.com/vi/GZpSuTN3ln0/0.jpg)](http://www.youtube.com/watch?v=GZpSuTN3ln0)
 
-[![Alt text for your video](http://img.youtube.com/vi/GZpSuTN3ln0/0.jpg)](http://www.youtube.com/watch?v=GZpSuTN3ln0)
+
+#### Licensed under [MIT](https://github.com/FastGap/fastgap/blob/master/LICENSE).
+> Made with ♥ by Brazilians [crazy guys](https://github.com/orgs/FastGap/members).
