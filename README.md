@@ -4,19 +4,16 @@
 
 > Made with ♥ by Brazilians crazy guys.
 
-<h2>We use in FastGap:</h2>
+## We use
 
-Zepto.js
-http://zeptojs.com
-
-Overthrow:
-http://filamentgroup.github.io/Overthrow/
-
-TopCoat
-http://topcoat.io
-
-Snap.JS
-https://github.com/jakiestfu/Snap.js/
+- [**Zepto.js**](http://zeptojs.com)
+  *"A minimalist JavaScript library for modern browsers."*
+- [**Overthrow**](http://filamentgroup.github.io/Overthrow/)
+  *"A tiny, no-frills, framework-independent, targeted overflow: auto polyfill for use in responsive design."*
+- [**Snap.js**](https://github.com/jakiestfu/Snap.js/)
+  *"A Library for creating beautiful mobile shelfs in Javascript."*
+- [**TopCoat**](http://topcoat.io)
+  *"CSS for clean and fast web apps."*
 
 ## Contributing
 See the [guidelines for contributing](https://github.com/FastGap/fastgap/blob/master/CONTRIBUTING.md).
