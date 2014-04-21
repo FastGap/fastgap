@@ -15,15 +15,21 @@
 - [**TopCoat**](http://topcoat.io)
   *"CSS for clean and fast web apps."*
 
-##Usage
+## How to start
 
-##For Production
+### Use FastGap in my App
 
-1 - [download](https://github.com/FastGap/fastgap/archive/master.zip) zip project or clone FastGap Project
+**1.** Download the latest version of **Demo pack** ([see releases](https://github.com/FastGap/fastgap/releases/download/0.0.45/FastGap-Demo-0.0.45.zip) for this).
 
-2 - copy /dist/ folder
+**2.** Copy ```assets/```, ```pages/``` folder and ```index.html``` file.
 
-3 - enjoy
+**3**. Put the *files* and *folders* in your phonegap project.
+
+###### If you use with [Bower](http://bower.io/)
+
+**1.** Run ```bower install fastgap```
+
+**2.** Put in ```index.html``` of your app the ```fastgap.min.js``` and the ```fastgap.min.css``` files.
 
 ##For Development
 
