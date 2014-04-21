@@ -31,46 +31,26 @@
 
 **2.** Put in ```index.html``` of your app the ```fastgap.min.js``` and the ```fastgap.min.css``` files.
 
-##For Development
+## How to contributing
 
-#Requires
+### 1. Read the Guidelines
 
-* [Node.JS](href='http://nodejs.org/')
-* [Bower](href='http://bower.io')
-* [Grunt](href='http://gruntjs.com')
+See the [**Contributing guide**](https://github.com/FastGap/fastgap/blob/master/CONTRIBUTING.md).
 
+### 2. Install dependencies
 
-######If you already have installed
+First, ensure that you have installed on your machine:
 
-#### Clone
+- [**Node.js**](href='http://nodejs.org/')
 
-    git clone https://github.com/FastGap/fastgap.git
+- [**Bower**](href='http://bower.io') ```[sudo] npm install bower -g```
 
-or [download](https://github.com/FastGap/fastgap/archive/master.zip) zip project
+- [**Grunt**](href='http://gruntjs.com') ```[sudo] npm install grunt-cli -g```
 
-#### Install npm packages
+Second, go to ```fastgap/``` folder (after [**fork**](https://github.com/FastGap/fastgap/fork) and **clone** this repo) and run ```npm install && bower install```  for install all dependencies of the project.
 
-1 - open src folder in terminal
-
-2 - install grunt
-    [sudo] npm install grunt-cli -g
-
-3 - install bower
-
-```[sudo] npm install bower -g```
-
-4 - install npm dependencies
-
-    [sudo] npm install
-
-4 - install bower components
-
-```bower install```
-
-5 - code you project in /src/
-
-## Contributing
-See the [guidelines for contributing](https://github.com/FastGap/fastgap/blob/master/CONTRIBUTING.md).
+### 3. Make a PR ;-)
+Wait for the [core team](https://github.com/orgs/FastGap/members) to evaluate and accept your *pull request*. All contributions are welcome. :ok_hand:
 
 ## Changelog
 See the [Changelog](https://github.com/FastGap/fastgap/blob/master/CHANGELOG.md) for list history changes.
