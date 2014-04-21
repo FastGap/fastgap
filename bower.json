@@ -27,7 +27,7 @@
   ],
   "ignore": [
     "**/.*",
-    "Gruntfile.js"
+    "Gruntfile.js",
     "*.json",
     "CONTRIBUTING.md",
     "node_modules",
