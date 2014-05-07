@@ -1,4 +1,4 @@
-# FastGap [![Stories in Ready](https://badge.waffle.io/FastGap/fastgap.png?label=ready)](https://waffle.io/FastGap/fastgap)
+# FastGap [![Stories in Ready](https://badge.waffle.io/FastGap/fastgap.png?label=ready)](https://waffle.io/FastGap/fastgap) [![devDependency Status](https://david-dm.org/FastGap/fastgap/dev-status.svg?theme=shields.io)](https://david-dm.org/FastGap/fastgap#info=devDependencies)
 
 > Template for jump start developing native mobile apps using Phonegap.
 
