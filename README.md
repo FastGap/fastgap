@@ -15,7 +15,7 @@
 
 ## How to start
 
-**1.** Download the latest version of **Demo pack** ([see releases](https://github.com/FastGap/fastgap/releases/download/0.0.45/FastGap-Demo-0.0.45.zip) for this).
+**1.** Download the latest version of **Demo pack** ([see releases](https://github.com/FastGap/fastgap/releases) for this).
 
 **2.** Copy ```assets/```, ```pages/``` folder and ```index.html``` file.
 
