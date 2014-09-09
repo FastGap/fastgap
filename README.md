@@ -62,4 +62,4 @@ See the [Changelog](https://github.com/FastGap/fastgap/blob/master/CHANGELOG.md)
 
 
 #### Licensed under [MIT](https://github.com/FastGap/fastgap/blob/master/LICENSE).
-> Made with ♥ by Brazilians [crazy guys](https://github.com/orgs/FastGap/members).
+> Made with ♥ by Brazilians [crazy guys](https://github.com/orgs/FastGap/people).
